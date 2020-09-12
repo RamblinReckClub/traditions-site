@@ -32,9 +32,9 @@
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 15%;
+    top: 10%;
     bottom: 1%;
-    left: -.3%;
+    left: -.15%;
     background-repeat: no-repeat;
     content: '';
 }
