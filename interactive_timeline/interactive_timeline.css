@@ -1,6 +1,6 @@
 #years {
     list-style-position: inside;
-    list-style-type: circle;
+    list-style-type: none;
     overflow: hidden;
     left: 0%;
     position: relative;
@@ -10,17 +10,28 @@
     position: relative;
     margin: 0;
     padding-bottom: 5%;
-    left: 0%;
+    left: 3%;
 }
 
-#years li:before {
+#years li:not(:last-child):before {
     background-color: #ffdf00;
     width: 6px;
     content: '';
     position: absolute;
     top: 0%;
     bottom: 0%;
-    left: 0%;
+    left: -1%;
+}
+
+#years li:last-child:before {
+    background-color: #ffdf00;
+    width: 6px;
+    height: 18%;
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: -1%;
 }
 
 #years li:after {
@@ -34,15 +45,27 @@
     position: absolute;
     top: 10%;
     bottom: 1%;
-    left: -.15%;
+    left: -1.15%;
     background-repeat: no-repeat;
     content: '';
 }
 
+#years li button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: black;
+    font-size: 150%;
+}
+
+#years li button:hover {
+    color: #ffdf00;
+}
+
 #years li a {
+    color: black;
     font-size: 150%;
     text-decoration: none;
-    color: black;
 }
 
 #years li a:hover {

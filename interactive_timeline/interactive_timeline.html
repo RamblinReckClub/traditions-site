@@ -5,25 +5,26 @@
 		<meta name="description" content="An interactive timeline to view major events in Georgia Tech history, with links to more information on each event">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="interactive_timeline.css">
+		<script type="text/javascript" src="interactive_timeline.js"></script>
 	</head>
 	<body>
 		<div id="history_timeline">
 			<ul id="years">
-				<li><a href="">1880</a></li>
-				<li><a href="">1890</a></li>
-				<li><a href="">1900</a></li>
-				<li><a href="">1910</a></li>
-				<li><a href="">1920</a></li>
-				<li><a href="">1930</a></li>
-				<li><a href="">1940</a></li>
-				<li><a href="">1950</a></li>
-				<li><a href="">1960</a></li>
-				<li><a href="">1970</a></li>
-				<li><a href="">1980</a></li>
-				<li><a href="">1990</a></li>
-				<li><a href="">2000</a></li>
-				<li><a href="">2010</a></li>
-				<li><a href="">2020</a></li>
+				<li><button type="button" onclick="open_years('1880', 1)">1880</button></li>
+				<li><button type="button" onclick="open_years('1890', 3)">1890</button></li>
+				<li><button type="button" onclick="open_years('1900', 5)">1900</button></li>
+				<li><button type="button" onclick="open_years('1910', 7)">1910</button></li>
+				<li><button type="button" onclick="open_years('1920', 9)">1920</button></li>
+				<li><button type="button" onclick="open_years('1930', 11)">1930</button></li>
+				<li><button type="button" onclick="open_years('1940', 13)">1940</button></li>
+				<li><button type="button" onclick="open_years('1950', 15)">1950</button></li>
+				<li><button type="button" onclick="open_years('1960', 17)">1960</button></li>
+				<li><button type="button" onclick="open_years('1970', 19)">1970</button></li>
+				<li><button type="button" onclick="open_years('1980', 21)">1980</button></li>
+				<li><button type="button" onclick="open_years('1990', 23)">1990</button></li>
+				<li><button type="button" onclick="open_years('2000', 25)">2000</button></li>
+				<li><button type="button" onclick="open_years('2010', 27)">2010</button></li>
+				<li><button type="button" onclick="open_years('2020', 29)">2020</button></li>
 			</ul>
 		</div>
 	</body>
