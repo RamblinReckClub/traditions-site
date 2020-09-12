@@ -1,0 +1,50 @@
+#years {
+    list-style-position: inside;
+    list-style-type: circle;
+    overflow: hidden;
+    left: 0%;
+    position: relative;
+}
+
+#years li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 5%;
+    left: 0%;
+}
+
+#years li:before {
+    background-color: #ffdf00;
+    width: 6px;
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+
+#years li:after {
+    background-color: #ffdf00;
+    width: 6px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/75/Disc_Plain_yellow_dark.svg);
+    border-radius: 10px;
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15%;
+    bottom: 1%;
+    left: -.3%;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+#years li a {
+    font-size: 150%;
+    text-decoration: none;
+    color: black;
+}
+
+#years li a:hover {
+    color: #ffdf00;
+}
