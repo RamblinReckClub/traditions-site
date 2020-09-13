@@ -1,16 +1,23 @@
+.history_timeline {
+    float:left;
+}
+
 #years {
     list-style-position: inside;
     list-style-type: none;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    float: left;
+    width: 100%;
     left: 0%;
-    position: relative;
+    position: absolute;
 }
 
 #years li {
     position: relative;
     margin: 0;
-    padding-bottom: 5%;
-    left: 3%;
+    padding-bottom: 1%;
+    left: 5%;
 }
 
 #years li:not(:last-child):before {
@@ -26,7 +33,7 @@
 #years li:last-child:before {
     background-color: #ffdf00;
     width: 6px;
-    height: 18%;
+    height: 30%;
     content: '';
     position: absolute;
     top: 0%;
@@ -43,7 +50,7 @@
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 10%;
+    top: 20%;
     bottom: 1%;
     left: -1.15%;
     background-repeat: no-repeat;
@@ -70,4 +77,20 @@
 
 #years li a:hover {
     color: #ffdf00;
+}
+
+#info {
+    list-style-position: inside;
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    left: 15%;
+    position: absolute;
+}
+
+#info li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1%;
+    left: 0%;
 }

@@ -18,7 +18,7 @@ function open_years(year, index){
             var year_last_digit = 9-i;
             var year_text = year.substring(0, 3) + (year_last_digit.toString());
             link_element.appendChild(document.createTextNode(year_text));
-            link_element.href = "";
+            link_element.href = "#" + year_text;
             list_element.appendChild(link_element);
             list_element.addAfter(list_item);
             expanded_index = index;
