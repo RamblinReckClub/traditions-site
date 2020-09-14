@@ -6,9 +6,10 @@
     list-style-position: inside;
     list-style-type: none;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     float: left;
-    width: 100%;
+    width: 12%;
+    height: 100vh;
     left: 0%;
     position: absolute;
 }
@@ -16,8 +17,8 @@
 #years li {
     position: relative;
     margin: 0;
-    padding-bottom: 1%;
-    left: 5%;
+    padding-bottom: 10%;
+    left: 15%;
 }
 
 #years li:not(:last-child):before {
@@ -27,7 +28,7 @@
     position: absolute;
     top: 0%;
     bottom: 0%;
-    left: -1%;
+    left: -8%;
 }
 
 #years li:last-child:before {
@@ -38,7 +39,7 @@
     position: absolute;
     top: 0%;
     bottom: 0%;
-    left: -1%;
+    left: -8%;
 }
 
 #years li:after {
@@ -52,7 +53,7 @@
     position: absolute;
     top: 20%;
     bottom: 1%;
-    left: -1.15%;
+    left: -9.3%;
     background-repeat: no-repeat;
     content: '';
 }
@@ -63,6 +64,7 @@
     padding: 0;
     color: black;
     font-size: 150%;
+
 }
 
 #years li button:hover {
@@ -82,8 +84,10 @@
 #info {
     list-style-position: inside;
     list-style-type: none;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     float: right;
+    height: 100vh;
     left: 15%;
     position: absolute;
 }

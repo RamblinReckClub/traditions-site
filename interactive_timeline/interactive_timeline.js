@@ -7,7 +7,7 @@ var expanded_index = 0;
 function open_years(year, index){
     if(expanded_index != index) {
         if(expanded_index > 0){
-            close_years()
+            close_years();
         }
         var years_list = document.getElementById('years');
         var list_item = years_list.childNodes[index];
@@ -22,7 +22,14 @@ function open_years(year, index){
             list_element.appendChild(link_element);
             list_element.addAfter(list_item);
             expanded_index = index;
+        }
+        document.getElementById(year).scrollIntoView();
     }
+    else {
+        if(expanded_index > 0) {
+            close_years();
+            expanded_index = 0;
+        }
     }
 }
 
