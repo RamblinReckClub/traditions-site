@@ -9,8 +9,9 @@
     overflow-y: auto;
     float: left;
     width: 12%;
-    height: 100vh;
-    left: 0%;
+    height: 96.5vh;
+    top: 3.5%;
+    left: 7%;
     position: absolute;
 }
 
@@ -87,8 +88,9 @@
     overflow-x: hidden;
     overflow-y: auto;
     float: right;
-    height: 100vh;
-    left: 15%;
+    height: 96.5vh;
+    top: 3.5%;
+    left: 20%;
     position: absolute;
 }
 

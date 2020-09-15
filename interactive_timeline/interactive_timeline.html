@@ -5,9 +5,83 @@
 		<meta name="description" content="An interactive timeline to view major events in Georgia Tech history, with links to more information on each event">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="interactive_timeline.css">
+		<link rel="stylesheet" href="../styles/main.css"/>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    	<script src="../scripts/vendor/modernizr.js"></script>
 		<script type="text/javascript" src="interactive_timeline.js"></script>
 	</head>
 	<body>
+		<div>
+			<div class="navigation"> <a class="logo-custom" href="index.html">T</a>        <!-- <a class="logo" href=""><img src="images/logo_small.png" /></a> -->
+		  
+			  <ul>
+				<li><a class="square @@ramblinreck" href="ramblinreck.html"></a><a class="label" href="ramblinreck.html">
+					<div class="arrow"></div>The Ramblin' Reck</a></li>
+				<li><a class="square @@whistle" href="whistle.html"></a><a class="label" href="whistle.html">
+					<div class="arrow"></div>The Whistle</a></li>
+				<li><a class="square active" href="buzz.html"></a><a class="label" href="buzz.html">
+					<div class="arrow"></div>Buzz</a></li>
+				<li><a class="square @@cleanhate" href="cleanhate.html"></a><a class="label" href="cleanhate.html">
+					<div class="arrow"></div>Clean Old Fashioned Hate</a></li>
+				<li><a class="square @@reckparade" href="reckparade.html"></a><a class="label" href="reckparade.html">
+					<div class="arrow"></div>Ramblin' Wreck Parade</a></li>
+				<li><a class="square @@technique" href="technique.html"></a><a class="label" href="technique.html">
+					<div class="arrow"></div>The Technique</a></li>
+				<li><a class="square @@gpb" href="gpb.html"></a><a class="label" href="gpb.html">
+					<div class="arrow"></div>George P. Burdell</a></li>
+				<li><a class="square @@cakerace" href="cakerace.html"></a><a class="label" href="cakerace.html">
+					<div class="arrow"></div>Freshmen Cake Race</a></li>
+				<li><a class="square @@goldfellas" href="goldfellas.html"></a><a class="label" href="goldfellas.html">
+					<div class="arrow"></div>Goldfellas</a></li>
+				<li><a class="square @@tbook" href="tbook.html"></a><a class="label" href="tbook.html">
+					<div class="arrow"></div>T-Book</a></li>
+				<li><a class="square @@ratcaps" href="ratcaps.html"></a><a class="label" href="ratcaps.html">
+					<div class="arrow"></div>Rat Caps</a></li>
+				<li><a class="square @@mini500" href="mini500.html"></a><a class="label" href="mini500.html">
+					<div class="arrow"></div>Mini 500</a></li>
+				<li><a class="square @@gtsongs" href="gtsongs.html"></a><a class="label" href="gtsongs.html">
+					<div class="arrow"></div>GT Songs</a></li>
+				<li><a class="square @@media media" href="media.html"></a><a class="label" href="media.html">
+					<div class="arrow"></div>Media</a></li>
+			  </ul>
+			</div>
+			<div class="mobile-nav">
+			  <div class="mobile-nav-header"> <a class="logo-custom" href="index.html">T</a> <a class="menu-icon"></a>
+			  </div>
+			  <div class="menu-wrap">
+				<ul>
+				  <li><a class="label @@ramblinreck" href="ramblinreck.html">
+					  <div class="arrow"></div>The Ramblin' Reck</a></li>
+				  <li><a class="label @@whistle" href="whistle.html">
+					  <div class="arrow"></div>The Whistle</a></li>
+				  <li><a class="label active" href="buzz.html">
+					  <div class="arrow"></div>Buzz</a></li>
+				  <li><a class="label @@cleanhate" href="cleanhate.html">
+					  <div class="arrow"></div>Clean Old Fashioned Hate</a></li>
+				  <li><a class="label @@reckparade" href="reckparade.html">
+					  <div class="arrow"></div>Ramblin' Wreck Parade</a></li>
+				  <li><a class="label @@technique" href="technique.html">
+					  <div class="arrow"></div>The Technique</a></li>
+				  <li><a class="label @@gpb" href="gpb.html">
+					  <div class="arrow"></div>George P. Burdell</a></li>
+				  <li><a class="label @@cakerace" href="cakerace.html">
+					  <div class="arrow"></div>Freshmen Cake Race</a></li>
+				  <li><a class="label @@goldfellas" href="goldfellas.html">
+					  <div class="arrow"></div>Goldfellas</a></li>
+				  <li><a class="label @@tbook" href="tbook.html">
+					  <div class="arrow"></div>T-Book</a></li>
+				  <li><a class="label @@ratcaps" href="ratcaps.html">
+					  <div class="arrow"></div>Rat Caps</a></li>
+				  <li><a class="label @@mini500" href="mini500.html">
+					  <div class="arrow"></div>Mini 500</a></li>
+				  <li><a class="label @@gtsongs" href="gtsongs.html">
+					  <div class="arrow"></div>GT Songs</a></li>
+				  <li><a class="label @@media" href="media.html">
+					  <div class="arrow"></div>Media</a></li>
+				</ul>
+			  </div>
+			</div>
+		</div>
 		<div id="history_timeline">
 			<ul id="years">
 				<li><button type="button" onclick="open_years('1880', 1)">1880</button></li>
