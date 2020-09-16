@@ -100,3 +100,24 @@
     padding-bottom: 1%;
     left: 0%;
 }
+
+.timeline_event {
+    border-style:solid;
+    border-color:black;
+    border-width: medium;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.timeline_event:hover {
+    border-style:ridge;
+    border-color:gold;
+}
+
+.timeline_event h2 {
+    margin: 1%;
+}
+
+.timeline_event p {
+    margin: 1%;
+}
