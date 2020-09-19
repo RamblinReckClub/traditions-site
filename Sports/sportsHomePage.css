@@ -1,0 +1,19 @@
+.openingimageshow {
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+}
+
+.imagemantle {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: fade 5s infinite;
+}
+
+@keyframes fade {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
