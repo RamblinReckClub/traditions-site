@@ -1,3 +1,12 @@
+body {
+    overflow-x:hidden;
+}
+
+#bodyText {
+    position: absolute;
+    top:100vh;
+}
+
 .openingText {
     height:20vh;
     width:110vh;
@@ -10,11 +19,12 @@
 
 .openingText h1 {
     color: white;
-    font-size: 600%;
+    font-size: 550%;
     line-height:20vh;
     text-align: center;
-    font-family: 'Tisa';
+    font-family: 'Georgia';
 }
+
 .openingimageshow {
     height:100vh;
     width:100vw;
@@ -56,3 +66,74 @@
     100% {opacity:1;}
 }
 
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.headergriditem {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.headergriditem h1 {
+    color: #003057;
+    background-color:rgb(179, 163, 105);
+    font-size: 300%;
+    text-align: left;
+    font-family: 'Georgia';
+}
+
+.textgriditem {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 75vh;
+    width: 66vw;
+}
+
+.textgriditem p {
+    color: black;
+    font-size: 150%;
+    text-align: left;
+    font-family: 'Roboto';
+}
+
+.imagegriditem{
+    float:right;
+    height: 75vh;
+    width: 33vw;
+}
+
+.listgriditem {
+    height: 75vh;
+    width: 33vw;
+}
+
+.listgriditem li {
+    height: 20vh;
+    width: 33vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.listgriditem li:hover {
+    border: .5vh solid rgb(179, 163, 105);
+}
+
+.listgriditem li p img {
+    float:left;
+    border-radius: 50%;
+    border: .3vh solid black;
+    margin-top: .8%;
+    margin-left: 1%;
+    height: 18vh;
+    width: 18vh;
+}
+
+.listgriditem li p {
+    line-height:20vh;
+    color: black;
+    font-size: 150%;
+    text-indent: 20%;
+    font-family: 'Roboto';
+}
