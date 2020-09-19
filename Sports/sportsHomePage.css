@@ -1,19 +1,41 @@
 .openingimageshow {
     height:100vh;
     width:100vw;
+    z-index: 1;
     overflow: hidden;
+    position: absolute;
+}
+
+.backgroundimageshow {
+    height:100vh;
+    width:100vw;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
 }
 
 .imagemantle {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    animation: fade 5s infinite;
+    animation: fadeout 5s infinite;
 }
 
-@keyframes fade {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
+.backimagemantle {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeout {
+    0% {opacity:1;}
+    70% {opacity:1;}
     100% {opacity:0;}
 }
+
+@keyframes fadein {
+    0% {opacity:0;}
+    30% {opacity:1;}
+    100% {opacity:1;}
+}
+
