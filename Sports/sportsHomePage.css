@@ -155,7 +155,7 @@ body {
     top: 40%;
     left: 22%;
     color:#003057;
-    background-color: rgb(179, 163, 105);
+    background-color: rgb(179, 163, 105, .5);
     font-size: 150%;
     text-align: center;
     font-family: 'Roboto';
@@ -174,4 +174,36 @@ body {
 
 .link:hover{
     color:rgb(179, 163, 105);
+}
+
+.navigationDiff {
+    display:none;
+    position:fixed;
+    top:20px;
+    z-index:9;
+    margin-left:10px
+}
+
+.navigationDiff .logo-custom{
+    margin-left:5px
+}
+
+.navigationDiff .logo-custom{
+    font-weight:700;
+    font-family:"Roboto Slab",serif;
+    color:#b3a369;
+    text-transform:uppercase;
+    font-size:20px;
+    letter-spacing:0;
+    padding:2px 12px;
+    border:4px #b3a369 solid;
+    text-align:center;
+    margin-left:3px;
+    margin-bottom:10px;
+    display:inline-block;
+    background:rgba(255,255,255,.1)
+}
+
+.navigationDiff .logo-custom:hover{
+    cursor:pointer
 }
