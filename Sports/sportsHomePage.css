@@ -13,6 +13,7 @@ body {
     top:37%;
     left:24%;
     background-color: rgba(179, 163, 105, .9);
+    border: 5px solid #003057;
     z-index: 3;
     position: absolute;
 }
@@ -90,9 +91,9 @@ body {
 }
 
 .headergriditem h1 {
-    color: #003057;
+    color: rgb(179, 163, 105);
     padding: 1%;
-    background-color:rgb(179, 163, 105);
+    background-color: #003057;;
     font-size: 300%;
     text-align: left;
     font-family: 'Georgia';
@@ -154,8 +155,8 @@ body {
 .listgriditem li:hover p {
     top: 40%;
     left: 22%;
-    color:#003057;
-    background-color: rgb(179, 163, 105, .5);
+    color:rgb(179, 163, 105);
+    background-color: rgba(0, 48, 87, .8);
     font-size: 150%;
     text-align: center;
     font-family: 'Roboto';
@@ -179,8 +180,8 @@ body {
 .sidenav {
     width: 0%;
     position: fixed;
-    z-index: 3;
-    background-color: rgb(179, 163, 105, .9);
+    z-index: 8;
+    background-color: #003057;
     overflow: hidden;
     padding-top: 5%;
     transition: 0.5s;
@@ -190,23 +191,73 @@ body {
     text-decoration: none;
     padding: 5%;
     font-size: 200%;
-    color: #003057;
+    text-align: left;
+    color: white;
     display: block;
     transition: 0.3s;
+    border-top: .3vh solid white;
+}
+
+.sidenav a:last-child {
+    text-decoration: none;
+    padding: 5%;
+    font-size: 200%;
+    text-align: left;
+    color: ;
+    display: block;
+    transition: 0.3s;
+    border-top: .3vh solid white;
+    border-bottom: .3vh solid white;
 }
   
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: rgb(179, 163, 105);
+    cursor:pointer;
+}
+
+.sidenav a:hover .arrow {
+    border: solid rgb(179, 163, 105);
+    border-left: .5vh;
+    border-top: .5vh;
 }
 
 #sidenavelement {
     height: 100%;
+    overflow-y: auto;
 }
 
-#sidenavsports {
-    width: 0%;
-    z-index: 10;
-    left: 12%;
-    top: 28.3%;
-    padding-top: 0%;
+#dimscreen {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 7;
+}
+
+.arrow {
+  border: solid white;
+  border-left: .5vh;
+  border-top: .5vh;
+  display: block;
+  float: right;
+  margin-top: 5%;
+  margin-right: 3%;
+  padding: 2%;
+  transform: rotate(45deg)
+}
+
+.hidden_sidebar_sports {
+    display: none !important;
+    font-size: 140% !important;
+}
+
+.hidden_sidebar_trad {
+    display: none !important;
+    font-size: 140% !important;
+}
+
+.hidden_sidebar_camp {
+    display: none !important;
+    font-size: 140% !important;
 }
