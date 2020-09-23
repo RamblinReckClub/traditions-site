@@ -200,14 +200,13 @@ body {
 
 .sidenav a:last-child {
     text-decoration: none;
-    padding: 5%;
-    font-size: 200%;
+    padding: 0%;
+    font-size: 0%;
     text-align: left;
-    color: ;
+    color: white;
     display: block;
     transition: 0.3s;
     border-top: .3vh solid white;
-    border-bottom: .3vh solid white;
 }
   
 .sidenav a:hover {
@@ -249,15 +248,15 @@ body {
 
 .hidden_sidebar_sports {
     display: none !important;
-    font-size: 140% !important;
+    font-size: 130% !important;
 }
 
 .hidden_sidebar_trad {
     display: none !important;
-    font-size: 140% !important;
+    font-size: 130% !important;
 }
 
 .hidden_sidebar_camp {
     display: none !important;
-    font-size: 140% !important;
+    font-size: 130% !important;
 }
