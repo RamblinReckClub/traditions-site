@@ -1,27 +1,33 @@
+/* % represents the amount of the element space to take up, vh represents how much of the viewport height to take up (100vh is entire viewport)
+
+/*This represents the block for the actual timeline element. Float left so that the block with timeline details are on the right*/
 .history_timeline {
     float:left;
 }
 
+/*This is styling for the actual entire list making timeline. All the dates are part of an unorded list with each list item being a bullet*/
 #years {
-    list-style-position: inside;
-    list-style-type: none;
-    overflow-x: hidden;
-    overflow-y: auto;
-    float: left;
-    width: 12%;
+    list-style-position: inside; /*Makes it so the bullet points fit in the ul tag and get affected by the css*/
+    list-style-type: none; /*Gets rid of the bullets*/
+    overflow-x: hidden; /*Makes it so now x Scroll bar shows up*/
+    overflow-y: auto; /*Makes it so y Scroll bar shows up if there are enough elements to go past the height of page*/
+    float: left; 
+    width: 12%; /*width and height change the width and height of the ul element*/
     height: 96.5vh;
-    top: 3.5%;
+    top: 3.5%; /*top and left change how far away from the upper left corner the thing is*/
     left: 7%;
-    position: absolute;
+    position: absolute; /*The above are elements just to place the timeline in the right place and give it an appropriate initial size*/
 }
 
+/*These represent the position of the actual dates on the timeline. Each li represent the date and it's corresponding part of timeline.*/
 #years li {
     position: relative;
     margin: 0;
     padding-bottom: 10%;
-    left: 15%;
+    left: 15%; /*Again the above are all positioning elements to place the things in a visually appealing place.*/
 }
 
+/*This is used to create the line that runs down the timeline*/
 #years li:not(:last-child):before {
     background-color: #ffdf00;
     width: 6px;
@@ -32,6 +38,7 @@
     left: -8%;
 }
 
+/*This makes sure the line that runs down the timeline doesn't exceed the bounds of the last dot for the last element/date in timeline*/
 #years li:last-child:before {
     background-color: #ffdf00;
     width: 6px;
@@ -43,6 +50,7 @@
     left: -8%;
 }
 
+/*This creates the little yellow dot that appears on the timeline for each li element. The background image link is safe to use without credit according to the site. To change the shape of dot, choose a different link to an image.*/
 #years li:after {
     background-color: #ffdf00;
     width: 6px;
@@ -59,29 +67,21 @@
     content: '';
 }
 
+/*Apply CSS to the button in each li element that when clicked expands the timeline....This is represented by the actual text of the date*/
 #years li button {
     background: none;
     border: none;
     padding: 0;
     color: black;
     font-size: 150%;
-
 }
 
+/* Change the color of the text when hovering over it*/
 #years li button:hover {
     color: #ffdf00;
 }
 
-#years li a {
-    color: black;
-    font-size: 150%;
-    text-decoration: none;
-}
-
-#years li a:hover {
-    color: #ffdf00;
-}
-
+/*This is the base CSS for the other div element next to the timeline showing all the text for the timeline*/
 #info {
     list-style-position: inside;
     list-style-type: none;
@@ -91,9 +91,10 @@
     height: 96.5vh;
     top: 3.5%;
     left: 20%;
-    position: absolute;
+    position: absolute; /*Same style of rules apply for the previous element with these specification*/
 }
 
+/*Represents each list element that corresponds with the date header*/
 #info li {
     position: relative;
     margin: 0;
@@ -101,6 +102,7 @@
     left: 0%;
 }
 
+/*This represents the div or block that makes up each text for stuff about the timeline. Each event in timeline has these properties*/
 .timeline_event {
     border-style:solid;
     border-color:black;
@@ -109,15 +111,18 @@
     margin-bottom: 1%;
 }
 
+/*When hovered over, do a little animation on the box to show it is highlighted*/
 .timeline_event:hover {
     border-style:ridge;
     border-color:gold;
 }
 
+/*Spacing for the title of the event*/
 .timeline_event h2 {
     margin: 1%;
 }
 
+/*Spacing for the text describing the timeline event*/
 .timeline_event p {
     margin: 1%;
 }
