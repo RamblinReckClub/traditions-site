@@ -1,3 +1,8 @@
+var open = false;
+var open_sports = false;
+var open_trads = false;
+var open_camp = false;
+
 function opencloseSideBar() {
     if (open == false) {
         document.getElementById("sidenavelement").style.width = "20%";
