@@ -67,6 +67,17 @@
     content: '';
 }
 
+#years li a {
+    font-size: 115%;
+    left: 3%;
+    font-style: none;
+    color: black;
+}
+
+#years li a:hover {
+    color: #ffdf00;
+}
+
 /*Apply CSS to the button in each li element that when clicked expands the timeline....This is represented by the actual text of the date*/
 #years li button {
     background: none;
@@ -74,6 +85,7 @@
     padding: 0;
     color: black;
     font-size: 150%;
+    padding-left:5%;
 }
 
 /* Change the color of the text when hovering over it*/
@@ -109,6 +121,18 @@
     border-width: medium;
     margin-top: 1%;
     margin-bottom: 1%;
+    width: 95%;
+    float: left;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 30vh;
+}
+
+.timeline_image {
+    border-width: medium;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    float: right;
 }
 
 /*When hovered over, do a little animation on the box to show it is highlighted*/
@@ -120,9 +144,22 @@
 /*Spacing for the title of the event*/
 .timeline_event h2 {
     margin: 1%;
+    font-size: 200%;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 /*Spacing for the text describing the timeline event*/
 .timeline_event p {
     margin: 1%;
+    font-size: 125%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/*Spacing for the image describing the timeline event*/
+.timeline_event img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 20vh;
 }
