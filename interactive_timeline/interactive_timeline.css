@@ -29,7 +29,7 @@
 
 /*This is used to create the line that runs down the timeline*/
 #years li:not(:last-child):before {
-    background-color: #ffdf00;
+    background-color: #B3A369;
     width: 6px;
     content: '';
     position: absolute;
@@ -40,7 +40,7 @@
 
 /*This makes sure the line that runs down the timeline doesn't exceed the bounds of the last dot for the last element/date in timeline*/
 #years li:last-child:before {
-    background-color: #ffdf00;
+    background-color: #B3A369;
     width: 6px;
     height: 30%;
     content: '';
@@ -52,9 +52,9 @@
 
 /*This creates the little yellow dot that appears on the timeline for each li element. The background image link is safe to use without credit according to the site. To change the shape of dot, choose a different link to an image.*/
 #years li:after {
-    background-color: #ffdf00;
+    background-color: #B3A369;
     width: 6px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/75/Disc_Plain_yellow_dark.svg);
+    background-image: url("../images/Disc_Plain_Gold.svg");
     border-radius: 10px;
     background-size: cover;
     width: 10px;
@@ -69,13 +69,14 @@
 
 #years li a {
     font-size: 115%;
+    font-family: "Roboto Slab";
     left: 3%;
     font-style: none;
     color: black;
 }
 
 #years li a:hover {
-    color: #ffdf00;
+    color: #B3A369;
 }
 
 /*Apply CSS to the button in each li element that when clicked expands the timeline....This is represented by the actual text of the date*/
@@ -85,12 +86,13 @@
     padding: 0;
     color: black;
     font-size: 150%;
+    font-family: "Roboto Slab";
     padding-left:5%;
 }
 
 /* Change the color of the text when hovering over it*/
 #years li button:hover {
-    color: #ffdf00;
+    color: #B3A369;
 }
 
 /*This is the base CSS for the other div element next to the timeline showing all the text for the timeline*/
@@ -110,7 +112,17 @@
 #info li {
     position: relative;
     margin: 0;
-    padding-bottom: 1%;
+    margin-bottom: 3%;
+    left: 0%;
+}
+
+#info li h1 {
+    position: relative;
+    margin: 0;
+    margin-left: 40%;
+    font-family: "Roboto";
+    border-bottom: .5vh solid black;
+    width: 6.4%;
     left: 0%;
 }
 
@@ -118,9 +130,9 @@
 .timeline_event {
     border-style:solid;
     border-color:black;
-    border-width: medium;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    border-width: 1vh;
+    margin-top: -2%;
+    margin-bottom: 5%;
     width: 95%;
     float: left;
     display: grid;
@@ -129,7 +141,7 @@
 }
 
 .timeline_image {
-    border-width: medium;
+    border-width: 1vh;
     margin-top: 0%;
     margin-bottom: 0%;
     float: right;
@@ -137,14 +149,14 @@
 
 /*When hovered over, do a little animation on the box to show it is highlighted*/
 .timeline_event:hover {
-    border-style:ridge;
-    border-color:gold;
+    border-color:#B3A369;
 }
 
 /*Spacing for the title of the event*/
 .timeline_event h2 {
     margin: 1%;
     font-size: 200%;
+    font-family: "Roboto Slab";
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -153,6 +165,7 @@
 .timeline_event p {
     margin: 1%;
     font-size: 125%;
+    font-family: "Georgia";
     grid-column-start: 2;
     grid-column-end: 4;
 }
