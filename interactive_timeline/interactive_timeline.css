@@ -1,4 +1,4 @@
-/* % represents the amount of the element space to take up, vh represents how much of the viewport height to take up (100vh is entire viewport)
+/* % represents the amount of the element space to take up, vh represents how much of the viewport height to take up (100vh is entire viewport)*/
 
 /*This represents the block for the actual timeline element. Float left so that the block with timeline details are on the right*/
 .history_timeline {
@@ -97,6 +97,8 @@
 
 /*This is the base CSS for the other div element next to the timeline showing all the text for the timeline*/
 #info {
+    background-image: url("../images/britterTbookDesign.png");
+    scroll-behavior: smooth;
     list-style-position: inside;
     list-style-type: none;
     overflow-x: hidden;
@@ -120,31 +122,29 @@
     position: relative;
     margin: 0;
     margin-left: 40%;
+    font-size: 250%;
+    color: #003057;
     font-family: "Roboto";
-    border-bottom: .5vh solid black;
-    width: 6.4%;
-    left: 0%;
+    border-bottom: .5vh solid #003057;
+    width: 6.7%;
+    left: 5%;
 }
 
 /*This represents the div or block that makes up each text for stuff about the timeline. Each event in timeline has these properties*/
 .timeline_event {
     border-style:solid;
-    border-color:black;
+    border-color:#003057;
+    background-color: white;
     border-width: 1vh;
     margin-top: -2%;
     margin-bottom: 5%;
-    margin-left: 8%;
+    margin-left: 14%;
     width: 120vh;
     height: 40vh;
     float: left;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-}
-
-/*When hovered over, do a little animation on the box to show it is highlighted*/
-.timeline_event:hover {
-    border-color:#B3A369;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 /*Spacing for the title of the event*/
