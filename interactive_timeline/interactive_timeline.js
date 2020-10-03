@@ -3,6 +3,7 @@ Element.prototype.addAfter = function (element) {
 }
 
 var expanded_index = 0; 
+var open_logo = false;
 
 function open_years(year, index){
     if(expanded_index != index) {
@@ -39,5 +40,15 @@ function close_years(){
     var nodes_to_delete = years_list.getElementsByClassName(delete_class_name)
     for (var i = nodes_to_delete.length; i > 0; i--){
         years_list.removeChild(nodes_to_delete[i - 1])
+    }
+}
+
+function changeNavOutline(){
+    if (open_logo==false) {
+        document.getElementsByClassName("logo-custom")[0].style.outline = "0px solid white";
+        open_logo=true;
+    } else if (open_logo==true) {
+        document.getElementsByClassName("logo-custom")[0].style.outline = "4px solid white";
+        open_logo=false;
     }
 }
