@@ -3,21 +3,17 @@ body {
     background-image: url("../images/britterTbookDesign.png");
 }
 
-/*This represents the block for the actual timeline element. Float left so that the block with timeline details are on the right*/
-.history_timeline {
-    float:left;
-}
-
 /*This is styling for the actual entire list making timeline. All the dates are part of an unorded list with each list item being a bullet*/
 #years {
     list-style-position: inside; /*Makes it so the bullet points fit in the ul tag and get affected by the css*/
     list-style-type: none; /*Gets rid of the bullets*/
+    background-color: rgb(255, 255, 255, .6);
     overflow-x: hidden; /*Makes it so now x Scroll bar shows up*/
     overflow-y: auto; /*Makes it so y Scroll bar shows up if there are enough elements to go past the height of page*/
     float: left; 
-    width: 12%; /*width and height change the width and height of the ul element*/
-    height: 96.5vh;
-    top: 3.5%; /*top and left change how far away from the upper left corner the thing is*/
+    width: 10%; /*width and height change the width and height of the ul element*/
+    height: 100vh;
+    padding-top: .5%;
     left: 7%;
     position: absolute; /*The above are elements just to place the timeline in the right place and give it an appropriate initial size*/
 }
@@ -30,9 +26,23 @@ body {
     left: 15%; /*Again the above are all positioning elements to place the things in a visually appealing place.*/
 }
 
+#years li:last-child {
+    padding-bottom: 5%;
+}
+
+#years li:first-child:before {
+    background-color: #B3A369;
+    width: 6px;
+    content: '';
+    position: absolute;
+    top: 25%;
+    bottom: 0%;
+    left: -8%;
+}
+
 /*This is used to create the line that runs down the timeline*/
-#years li:not(:last-child):before {
-    background-color: white;
+#years li:not(:last-child):not(:first-child):before {
+    background-color: #B3A369;
     width: 6px;
     content: '';
     position: absolute;
@@ -43,7 +53,7 @@ body {
 
 /*This makes sure the line that runs down the timeline doesn't exceed the bounds of the last dot for the last element/date in timeline*/
 #years li:last-child:before {
-    background-color: white;
+    background-color: #B3A369;
     width: 6px;
     height: 30%;
     content: '';
@@ -55,7 +65,7 @@ body {
 
 /*This creates the little yellow dot that appears on the timeline for each li element. The background image link is safe to use without credit according to the site. To change the shape of dot, choose a different link to an image.*/
 #years li:after {
-    background-color: white;
+    background-color: #B3A369;
     width: 6px;
     background-image: url("../images/Disc_Plain_Gold.svg");
     border-radius: 10px;
@@ -65,7 +75,7 @@ body {
     position: absolute;
     top: 23%;
     bottom: 1%;
-    left: -10.35%;
+    left: -10.75%;
     background-repeat: no-repeat;
     content: '';
 }
@@ -78,12 +88,24 @@ body {
     color: #003057;
     font-size: 200%;
     font-family: "Roboto Slab";
-    padding-left:5%;
+    padding-left:17%;
 }
 
 /* Change the color of the text when hovering over it*/
 #years li button:hover {
     color: white;
+}
+
+#years li a {
+    font-size: 150%;
+    font-family: "Roboto Slab";
+    margin-left: 15%;
+    font-style: none;
+    color: #003057;
+}
+
+#years li a:hover {
+    color:white;
 }
 
 /*This is the base CSS for the other div element next to the timeline showing all the text for the timeline*/
@@ -94,7 +116,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     float: right;
-    height: 96.5vh;
+    height: 100vh;
     top: 0%;
     left: 20%;
     position: absolute; /*Same style of rules apply for the previous element with these specification*/
@@ -117,7 +139,7 @@ body {
     font-family: "Roboto";
     border-bottom: .5vh solid #003057;
     width: 6.7%;
-    left: 5.85%;
+    left: 5%;
 }
 
 /*This represents the div or block that makes up each text for stuff about the timeline. Each event in timeline has these properties*/
@@ -128,7 +150,7 @@ body {
     border-width: 1vh;
     margin-top: -2%;
     margin-bottom: 5%;
-    margin-left: 13.5%;
+    margin-left: 12.3%;
     width: 120vh;
     height: 40vh;
     float: left;

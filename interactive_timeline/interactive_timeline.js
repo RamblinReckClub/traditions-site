@@ -24,7 +24,7 @@ function open_years(year, index){
             list_element.addAfter(list_item);
             expanded_index = index;
         }
-        document.getElementById(year).scrollIntoView();
+        document.getElementById(year).scrollIntoView(true);
     }
     else {
         if(expanded_index > 0) {
