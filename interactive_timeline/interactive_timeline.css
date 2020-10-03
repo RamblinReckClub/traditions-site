@@ -209,4 +209,9 @@ body {
 .clickable {
     position: relative;
     z-index: 6;
+    color:blue;
+}
+
+.clickable:visited {
+    color:blue;
 }
