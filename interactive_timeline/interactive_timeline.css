@@ -89,11 +89,12 @@ body {
     font-size: 200%;
     font-family: "Roboto Slab";
     padding-left:17%;
+    cursor: pointer;
 }
 
 /* Change the color of the text when hovering over it*/
 #years li button:hover {
-    color: white;
+    color: #B3A369;
 }
 
 #years li a {
@@ -105,7 +106,7 @@ body {
 }
 
 #years li a:hover {
-    color:white;
+    color:#B3A369;
 }
 
 /*This is the base CSS for the other div element next to the timeline showing all the text for the timeline*/
@@ -138,7 +139,7 @@ body {
     color: #003057;
     font-family: "Roboto";
     border-bottom: .5vh solid #003057;
-    width: 6.7%;
+    width: 6.1%;
     left: 5%;
 }
 
@@ -203,4 +204,9 @@ body {
 
 .navigation .logo-custom:hover{
     background-color: rgba(255, 255, 255, 1);
+}
+
+.clickable {
+    position: relative;
+    z-index: 6;
 }

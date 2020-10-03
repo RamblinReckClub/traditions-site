@@ -19,12 +19,15 @@ function open_years(year, index){
             var year_last_digit = 9-i;
             var year_text = year.substring(0, 3) + (year_last_digit.toString());
             link_element.appendChild(document.createTextNode(year_text));
-            link_element.href = "#" + year_text;
+            (function (year_text) {
+                link_element.onclick = function() { jumpto(year_text.toString()); }
+            })(year_text);
+            link_element.style.cursor = "pointer";
             list_element.appendChild(link_element);
             list_element.addAfter(list_item);
             expanded_index = index;
         }
-        document.getElementById(year).scrollIntoView(true);
+        document.getElementById("info").scrollTop = document.getElementById(year).offsetHeight + document.getElementById(year).offsetTop - (window.innerHeight / 15)
     }
     else {
         if(expanded_index > 0) {
@@ -51,4 +54,8 @@ function changeNavOutline(){
         document.getElementsByClassName("logo-custom")[0].style.outline = "4px solid white";
         open_logo=false;
     }
+}
+
+function jumpto(year) {
+    document.getElementById("info").scrollTop = document.getElementById(year).offsetHeight + document.getElementById(year).offsetTop - (window.innerHeight / 15)
 }
