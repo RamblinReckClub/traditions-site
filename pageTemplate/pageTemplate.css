@@ -1,0 +1,35 @@
+.mainImage {
+    height: 100vh;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 24vw 48vw 24vw;
+    width: 94vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.leftMainGrid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-width: 24vw;
+}
+
+.centerMainGrid {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    max-width: 48vw;
+}
+
+.centerMainGrid p {
+    margin-top: 5%;
+    word-wrap: break-word;
+    font-size: 115%;
+}
+
+.rightMainGrid {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    max-width: 24vw;
+}
