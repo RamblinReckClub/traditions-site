@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>GT Sports Home Page</title>
+        <meta name="description" content="Home page of sport traditions at Georgia Tech">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="sportsHomePage.css"/>
+        <link rel="stylesheet" href="../styles/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+        <script src="sportsHomePage.js"></script>
+        <script src="../scripts/vendor/modernizr.js"></script>
+    </head>
+    <body onload="loopThroughImages();">
+        <div>
+            <div id="sidenavelement" class="sidenav">
+                <a href="#">Home</a>
+                <a href="#">Timeline</a>
+                <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+                <a class="hidden_sidebar_sports" href="#">Sports Home</a>
+                <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+                <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+                <a class="hidden_sidebar_sports" href="#">Records</a>
+                <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+                <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+                <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+                <a class="hidden_sidebar_trad" href="#">THWG</a>
+                <a class="hidden_sidebar_trad" href="#">Mascots</a>
+                <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+                <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+                <a class="hidden_sidebar_camp" href="#">Student Center</a>
+                <a class="hidden_sidebar_camp" href="#">The CULC</a>
+                <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+                <a></a>
+            </div>
+            <div id="dimscreen"></div>
+            <div id="header">
+                <div class="navigation">
+                    <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+                </div>
+                <div class="openingText">
+                    <h1>Sports at Georgia Tech</h1>
+                </div>
+                <div class="openingimageshow">
+                    <img src="../images/unapproved/BobbyDodd.PNG" class= "imagemantle">
+                    <img src="../images/unapproved/volleyball.jpg" class= "imagemantle">
+                    <img src="../images/unapproved/josescore.jpg" class= "imagemantle">
+                    <img src="../images/unapproved/swimming.jpg" class= "imagemantle">
+                    <img src="../images/unapproved/womensball.jpg" class= "imagemantle">
+                    <img src="../images/unapproved/baseballbull.jpg" class= "imagemantle">
+                </div>
+                <div class="backgroundimageshow">
+                    <img src="../images/unapproved/BobbyDodd.PNG" class= "backimagemantle">
+                    <img src="../images/unapproved/volleyball.jpg" class= "backimagemantle">
+                    <img src="../images/unapproved/josescore.jpg" class= "backimagemantle">
+                    <img src="../images/unapproved/swimming.jpg" class= "backimagemantle">
+                    <img src="../images/unapproved/womensball.jpg" class= "backimagemantle">
+                    <img src="../images/unapproved/baseballbull.jpg" class= "backimagemantle">
+                </div>
+            </div>
+            <div id="bodyText">
+                <div class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Summary of GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div class="gridcontainerlist">
+                    <div class="listgriditem">
+                        <ul>
+                            <li><img src="../images/unapproved/footballClick.jpg" class="sportpicfirst"><p>Football</p></li>
+                            <li><img src="../images/unapproved/basketballMClick.jpg" class="sportpicfirst"><p>Men's Basketball</p></li>
+                            <li><img src="../images/unapproved/tennisMClick.jpg" class="sportpicfirst"><p>Men's Tennis</p></li>
+                            <li><img src="../images/unapproved/swimmingClick.jpg" class="sportpicfirst"><p>Swimming & Diving</p></li>
+                            <li><img src="../images/unapproved/crossCountryMClick.jpg" class="sportpicfirst"><p>Men's Cross Country</p></li>
+                        </ul>
+                    </div>
+                    <div class="listgriditem">
+                        <ul>
+                            <li><img src="../images/unapproved/volleyballClick.jpg" class="sportpic"><p>Volleyball</p></li>
+                            <li><img src="../images/unapproved/basketballWClick.jpg" class="sportpic"><p>Women's Basketball</p></li>
+                            <li><img src="../images/unapproved/tennisWClick.jpg" class="sportpic"><p>Women's Tennis</p></li>
+                            <li><img src="../images/unapproved/trackMClick.jpg" class="sportpic"><p>Men's Track & Field</p></li>
+                            <li><img src="../images/unapproved/crossCountryWClick.jpg" class="sportpic"><p>Women's Cross Country</p></li>
+                        </ul>
+                    </div>
+                    <div class="listgriditem">
+                        <ul>
+                            <li><img src="../images/unapproved/baseballClick.jpg" class="sportpic"><p>Baseball</p></li>
+                            <li><img src="../images/unapproved/golfClick.jpg" class="sportpic"><p>Golf</p></li>
+                            <li><img src="../images/unapproved/softballClick.jpg" class="sportpic"><p>Softball</p></li>
+                            <li><img src="../images/unapproved/trackWClick.jpg" class="sportpic"><p>Women's Track & Field</p></li>
+                            <li><img src="../images/unapproved/clubSportsClick.jpg" class="sportpic"><p>Club Sports</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
