@@ -63,3 +63,67 @@ body {
     background-color: rgba(255, 255, 255, .8);
     z-index: 2;
 }
+
+
+/*This is styling for the actual entire list making timeline. All the dates are part of an unorded list with each list item being a bullet*/
+#times {
+    list-style-position: inside; /*Makes it so the bullet points fit in the ul tag and get affected by the css*/
+    list-style-type: none; /*Gets rid of the bullets*/
+    overflow-y: hidden; /*Makes it so now x Scroll bar shows up*/
+    overflow-x: auto; /*Makes it so y Scroll bar shows up if there are enough elements to go past the height of page*/
+    float: left; 
+    width: 90vw; /*width and height change the width and height of the ul element*/
+    height: 12vh;
+    padding-top: .5%;
+    left: 18vw;
+    position: absolute; /*The above are elements just to place the timeline in the right place and give it an appropriate initial size*/
+}
+
+/*These represent the position of the actual dates on the timeline. Each li represent the date and it's corresponding part of timeline.*/
+#times li {
+    display: inline;
+    position: relative;
+    top: 6vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#times li:not(:last-child):before {
+    background-color: #B3A369;
+    height: 1vh;
+    width: 8vw;
+    content: '';
+    position: absolute;
+    top: -4vh;
+    left: 3vh;
+}
+
+#times li:after {
+  content: "";
+  width: 2vh;
+  height: 2vh;
+  background: #fff;
+  position: absolute;
+  border-radius: 2vh;
+  top: -5vh;
+  left: 1vw;
+  border: .5vh solid #B3A369;
+}
+
+#times li:hover:after {
+    background: #003057; 
+}
+
+#times li a {
+    color: #003057;
+    font-size: 150%;
+    text-align: center;
+}
+
+#times li a:hover {
+    color: #B3A369;
+}
+
+#times li a:visited {
+    color: #003057;
+}
