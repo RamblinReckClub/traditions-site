@@ -12,7 +12,7 @@
         <script src="../scripts/vendor/modernizr.js"></script>
         <script src="../scripts/navbar.js"></script>
     </head>
-    <body onload="loopThroughImages();">
+    <body onload="loadRightPageElements()">
         <div>
             <div id="sidenavelement" class="sidenav">
                 <a href="#">Home</a>
@@ -41,26 +41,187 @@
                 </div>
                 <div id="timelineBar">
                     <ul id="times">
-                        <li><a href="">Test 1</a></li>
-                        <li><a href="">Test 2</a></li>
-                        <li><a href="">Test 3</a></li>
-                        <li><a href="">Test 4</a></li>
-                        <li><a href="">Test 5</a></li>
-                        <li><a href="">Test 6</a></li>
-                        <li><a href="">Test 7</a></li>
-                        <li><a href="">Test 8</a></li>
+                        <li><a href="#/" onclick="updatePage(1)">Test 1</a></li>
+                        <li><a href="#/" onclick="updatePage(2)">Test 2</a></li>
+                        <li><a href="#/" onclick="updatePage(3)">Test 3</a></li>
+                        <li><a href="#/" onclick="updatePage(4)">Test 4</a></li>
+                        <li><a href="#/" onclick="updatePage(5)">Test 5</a></li>
+                        <li><a href="#/" onclick="updatePage(6)">Test 6</a></li>
+                        <li><a href="#/" onclick="updatePage(7)">Test 7</a></li>
+                        <li><a href="#/" onclick="updatePage(8)">Test 8</a></li>
                     </ul>
                 </div>
                 <div class="openingimageshow">
-                    <video id="openVideo" loop muted>
+                    <video id="slide1" id="openVideo" loop muted>
                         <source src="../videos/gameday_test_video.mp4" type="video/mp4">
                     </video> 
+                    <img id="slide2" src="../images/goldfellas.jpg">
+                    <img id="slide3" src="../images/hp-buzz.jpg">
+                    <img id="slide4" src="../images/gpb_cake.jpg">
+                    <img id="slide5" src="../images/buzz2011.jpg">
+                    <img id="slide6" src="../images/nerds.jpg">
+                    <img id="slide7" src="../images/tbooks.jpg">
+                    <img id="slide8" src="../images/slide1.jpg">
                 </div>
             </div>
             <div id="bodyText">
-                <div class="gridcontainer">
+                <div id="text1" class="gridcontainer">
                     <div class="headergriditem">
-                        <h1>Summary of GT Athletics</h1>
+                        <h1>1 of GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div id="text2" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>2 GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div id="text3" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>3 of GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div id="text4" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>4 of GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div id="text5" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>5 of GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div id="text6" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>6 of GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div id="text7" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>7 of GT Athletics</h1>
+                    </div>
+                    <div class="textgriditem">
+                        <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>
+                        Tech has a rich tradition of success in its sports including a couple national championships. The Football team has 4 claimed national titles (more than u(sic)ga) and Tech has an NCAA team championship in Women's Tennis.
+                        Additionally, Tech has done a great job in producing high quality athletes from the institute such as Calvin Johnson, Chris Bosh, Mark Teixeira, and Bobby Jones.<br><br>
+                        The Georgia Tech Athletic Association, a private nonprofit organization on campus, is what runs our athletic department, and spends around $94 million yearly to keep our programs afloat.
+                        Currently, the athletic director for Georgia Tech is Todd Stansbury, a former Georgia Tech linebacker, and has done an excellent job in revamping the programs at the school in his tenure since 2017.<br><br>
+                        Originally, Tech was part of the Southern Intercollegiate Athletic Association in 1895, then went to form the Southern Conference in 1921. After that, they along with 12 other schools split to form the Southeastern Conference (SEC) in 1932.
+                        Then, after a disagreement with other SEC schools, Tech left to found the Metro-6 Conference in 1975, before finally arriving to their current home in the Atlantic Coast Conference (ACC) in 1978.<br><br>
+                        To learn more about the sports programs here at Tech, check out the programs in the table below, or check out the <a class="link" href="https://ramblinwreck.com/" target="_blank">GT athletics website</a>.
+                    </p>
+                    </div>
+                    <div class="imagegriditem">
+                        <img src="../images/unapproved/nationalTitle.jpg" class= "backimagemantle">
+                    </div>
+                    <div class="headergriditem">
+                        <h1>Georgia Tech's Sports</h1>
+                    </div>
+                </div>
+                <div id="text8" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>8 of GT Athletics</h1>
                     </div>
                     <div class="textgriditem">
                         <p>The Georgia Tech Yellow Jackets represent Georgia Tech in 15 different D1 spots: 8 men's teams and 7 women's teams. Additionally, Tech sponsors club sports for sports such as Ice Hockey.<br><br>

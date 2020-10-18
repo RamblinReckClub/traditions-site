@@ -42,6 +42,12 @@ body {
     object-fit: fill;
 }
 
+.openingimageshow img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: fill;
+}
+
 .imagemantle {
     height: 100%;
     width: 100%;
@@ -126,4 +132,68 @@ body {
 
 #times li a:visited {
     color: #003057;
+}
+
+.openingimageshow #slide1 {
+    display: inline;
+}
+
+.openingimageshow #slide2 {
+    display: none;
+}
+
+.openingimageshow #slide3 {
+    display: none;
+}
+
+.openingimageshow #slide4 {
+    display: none;
+}
+
+.openingimageshow #slide5 {
+    display: none;
+}
+
+.openingimageshow #slide6 {
+    display: none;
+}
+
+.openingimageshow #slide7 {
+    display: none;
+}
+
+.openingimageshow #slide8 {
+    display: none;
+}
+
+#text1 {
+    display: inline;
+}
+
+#text2 {
+    display: none;
+}
+
+#text3 {
+    display: none;
+}
+
+#text4 {
+    display: none;
+}
+
+#text5 {
+    display: none;
+}
+
+#text6 {
+    display: none;
+}
+
+#text7 {
+    display: none;
+}
+
+#text8 {
+    display: none;
 }

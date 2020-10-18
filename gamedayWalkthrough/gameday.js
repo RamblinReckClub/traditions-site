@@ -1,18 +1,29 @@
-var openSideBar = false;
+function updatePage(index) {
+    sessionStorage.setItem("shownSlide", index.toString());
+    sessionStorage.setItem("shownText", index.toString());
+    location.reload();
+}
 
-window.addEventListener('load', function () {
-    console.log("test");
-    var vid = document.getElementById("openVideo");
-    vid.play();  
-})
-
-function startpauseVideo() {
-    var vid = document.getElementById("openVideo");
-    if (openSideBar == false) {
-        vid.pause();
-        openSideBar = true;
-    } else if (openSideBar == true) {
-        vid.play();
-        openSideBar = false;
+function loadRightPageElements() {
+    if (sessionStorage.getItem("shownSlide") == null) {
+        sessionStorage.setItem("shownSlide", 1);
+    }
+    if (sessionStorage.getItem("shownText") == null) {
+        sessionStorage.setItem("shownText", 1);
+    }
+    shownSlideID = "slide" + sessionStorage.getItem("shownSlide");
+    shownTextID = "text" + sessionStorage.getItem("shownText");
+    if (sessionStorage.getItem("shownSlide") != 1) {
+        var shownSlideElement = document.getElementById(shownSlideID);
+        var hiddenSlideElement = document.getElementById("slide1");
+        var shownTextElement = document.getElementById(shownTextID);
+        var hiddenTextElement = document.getElementById("text1");
+        hiddenSlideElement.style.display = "none";
+        shownSlideElement.style.display = "inline";
+        hiddenTextElement.style.display = "none";
+        shownTextElement.style.display = "inline";
+    } else {
+        sessionStorage.setItem("shownSlide", 1);
+        sessionStorage.setItem("shownText", 1);
     }
 }
