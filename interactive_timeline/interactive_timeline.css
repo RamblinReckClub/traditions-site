@@ -167,7 +167,7 @@ body {
     font-size: 200%;
     font-family: "Roboto Slab";
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -197,6 +197,16 @@ body {
     height: 38vh;
 }
 
+.timeline_event a {
+    position: relative;
+    z-index: 6;
+    color:blue;
+}
+
+.timeline_event a:visited {
+    color:blue;
+}
+
 .navigation .logo-custom{
     background-color: rgba(255, 255, 255, .75);
     outline: 4px solid white;
@@ -204,14 +214,4 @@ body {
 
 .navigation .logo-custom:hover{
     background-color: rgba(255, 255, 255, 1);
-}
-
-.clickable {
-    position: relative;
-    z-index: 6;
-    color:blue;
-}
-
-.clickable:visited {
-    color:blue;
 }
