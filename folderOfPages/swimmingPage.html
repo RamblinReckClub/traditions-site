@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../styles/main.css"/>
+    <link rel="stylesheet" href="../styles/pageTemplate.css"/>
+    <link rel="stylesheet" href="../styles/navbar.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="../scripts/vendor/modernizr.js"></script>
+    <script src="../scripts/navbar.js"></script>
+  </head>
+  <body>
+    <div>
+        <div id="sidenavelement" class="sidenav">
+            <a href="#">Home</a>
+            <a href="#">Timeline</a>
+            <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+            <a class="hidden_sidebar_sports" href="#">Sports Home</a>
+            <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+            <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+            <a class="hidden_sidebar_sports" href="#">Records</a>
+            <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+            <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+            <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+            <a class="hidden_sidebar_trad" href="#">THWG</a>
+            <a class="hidden_sidebar_trad" href="#">Mascots</a>
+            <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+            <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+            <a class="hidden_sidebar_camp" href="#">Student Center</a>
+            <a class="hidden_sidebar_camp" href="#">The CULC</a>
+            <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+            <a></a>
+        </div>
+        <div id="dimscreen"></div>
+        <div id="header">
+            <div class="navigation">
+                <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+            </div>
+        </div>
+    </div>
+    <div class="mantle">
+        <div class="row">
+            <div class="col-xs-16 col-md-12 mantle-image"> 
+                <img class="mainImage" src="../images/mantle-buzz.jpg"/> <!--Change here with seperate, relevant image-->
+            </div>
+            <div class="col-xs-16 col-md-4">
+                <div class="cover-text">
+                    <div>
+                        <h1>Swimming and Diving<!--Add the name of the page here-->
+                            <div class="accent-bottom"></div>
+                        </h1>
+                    </div> 
+                    <img src="../images/year-1972.png"/> <!--Change here with seperate image....If you can make more of the year things-->
+                    <div class="slogan">Stars of McAuley Aquatic Center</div> <!--Change here with a quick description or something like Go Jackets!...See the original site for motivation-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainGrid"> <!--Add elements to the right spot...To the left and right, an entire element is what serves within each div tag-->
+        <div class="leftMainGrid"> <!--Add elements here to add to the left side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#FFFFFF; margin-top: 10vh;"> <!--margin-top expresses the space between one element to the next-->
+                <img src="../images/goldfellas.jpg" style="height: 30vh;"> <!--You can specify specific elements using style=....Like change heights, colros, etc...-->
+                <p class="caption">This is a test caption.</p>
+            </div>
+            <div style="background-color:#B3A369; margin-top: 10vh;">
+                <video controls> <!--You can add more elements like autoplay, muted, etc.... Look up html video tag...Add any video to the video folder-->
+                    <source src="../videos/sample_video.mp4" type="video/mp4">
+                </video> 
+                <p class="caption">This is a test caption.</p>
+            </div>
+        </div>
+        <div class="centerMainGrid"> <!--This is where the main text goes...Create a new p tag for each new paragraph you want-->
+            <p>The Yellow Jackets made a splash in this shortened season with NCAA Championship qualifiers from both swimming and diving. One small splasher but high scorer this season was junior diver Camryn Hidalgo. At zones last season, she put up a final platform score of 283.95, qualifying her for Nationals and earning a spot at the Olympic Trials. She became the fifth ever Georgia Tech diver to qualify for Nationals in the 1-meter, 3-meter, and platform. Caio Pumpitus is constantly raising the bar for the team. Entering his fourth year at Georgia Tech, Caio will probably go down as the best swimmer Tech has ever seen; he already holds the ACC record in the 100 meter breaststroke.</p>
+            <p>The Yellow Jackets’ home meets take place at the McAuley Aquatic Center in the CRC from late September until January, providing plenty of time to see these talented swimmers in action.
+            </p>
+        </div>
+        <div class="rightMainGrid"> <!--Add elements here to add to the right side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#FFFFFF; margin-top: 5vh;">
+                <audio controls> <!--You can add more elements to this....Look up html audio tag...Add any audio to the audio folder-->
+                    <source src="../audios/StarWars60.wav" type="audio/wav">
+                </audio> 
+                <p class="caption">This is a test caption.</p>
+            </div>
+            <div style="background-color:gray; margin-top: 10vh; border: .5vh solid black;">
+                <p class="sideText">This is some random side text and here is a hyperlink to add to <a href=https://www.youtube.com/watch?v=oHg5SJYRHA0>an awesome link</a></p>
+            </div>
+        </div>
+    </div> 
+    <footer class="l-site-footer"></footer>    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+</html>
