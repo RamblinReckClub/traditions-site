@@ -136,6 +136,12 @@ body {
     border: 1vh solid #003057;
 }
 
+.listgriditem li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 .listgriditem li img {
     pointer-events: none;
     float:left;
