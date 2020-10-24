@@ -81,7 +81,7 @@ body {
     width: 90vw; /*width and height change the width and height of the ul element*/
     height: 12vh;
     padding-top: .5%;
-    left: 18vw;
+    left: 6.5vw;
     position: absolute; /*The above are elements just to place the timeline in the right place and give it an appropriate initial size*/
 }
 
@@ -90,14 +90,24 @@ body {
     display: inline;
     position: relative;
     top: 6vh;
-    margin-right: 2vw;
-    margin-left: 2vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 
 #times li:not(:last-child):before {
     background-color: #B3A369;
     height: 1vh;
-    width: 8vw;
+    width: 18vw;
+    content: '';
+    position: absolute;
+    top: -4vh;
+    left: 3vh;
+}
+
+#times li:nth-last-child(2):before {
+    background-color: #B3A369;
+    height: 1vh;
+    width: 10vw;
     content: '';
     position: absolute;
     top: -4vh;
@@ -122,7 +132,8 @@ body {
 
 #times li a {
     color: #003057;
-    font-size: 150%;
+    font-size: 140%;
+    margin-left: 1vw;
     text-align: center;
 }
 
