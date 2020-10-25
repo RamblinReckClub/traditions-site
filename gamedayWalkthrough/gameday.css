@@ -146,7 +146,7 @@ body {
 }
 
 .openingimageshow #slide1 {
-    display: inline;
+    display: none;
 }
 
 .openingimageshow #slide2 {
@@ -182,7 +182,7 @@ body {
 }
 
 #text1 {
-    display: grid;
+    display: none;
 }
 
 #text2 {
