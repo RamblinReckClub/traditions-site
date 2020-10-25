@@ -21,7 +21,7 @@ function loadRightPageElements() {
         hiddenSlideElement.style.display = "none";
         shownSlideElement.style.display = "inline";
         hiddenTextElement.style.display = "none";
-        shownTextElement.style.display = "inline";
+        shownTextElement.style.display = "grid";
     } else {
         sessionStorage.setItem("shownSlide", 1);
         sessionStorage.setItem("shownText", 1);
