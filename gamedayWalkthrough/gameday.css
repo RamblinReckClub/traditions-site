@@ -260,6 +260,7 @@ body {
     grid-column-end: 3;
     max-height: 29vw;
     max-width: 40vw;
+    padding-bottom: 2.5%;
 }
 
 .backImageMantle {
