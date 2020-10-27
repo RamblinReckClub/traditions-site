@@ -16,8 +16,8 @@ var list_1960s = [1, 4, 7, 9];
 var list_1970s = [2, 3, 4, 8];
 var list_1980s = [1, 7, 9];
 var list_1990s = [1, 4, 6];
-var list_2000s = [2, 3, 4, 7, 8];
-var list_2010s = [1, 3, 9];
+var list_2000s = [2, 3, 4, 7, 8, 9];
+var list_2010s = [1, 3, 8];
 var list_of_lists = [list_1880s, list_1890s, list_1900s, list_1910s, list_1920s, list_1930s, list_1940s, list_1950s, list_1960s, list_1970s, list_1980s, list_1990s, list_2000s, list_2010s]
 
 function open_years(year, index){
