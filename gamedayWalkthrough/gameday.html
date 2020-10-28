@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Football Gameday Walkthrough</title>
+        <meta name="description" content="Gameday walkthrough of a typical football day">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="gameday.css"/>
+        <link rel="stylesheet" href="../styles/main.css"/>
+        <link rel="stylesheet" href="../styles/navbar.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+        <script src="gameday.js"></script>
+        <script src="../scripts/vendor/modernizr.js"></script>
+        <script src="../scripts/navbar.js"></script>
+    </head>
+    <body onload="loadRightPageElements()">
+        <div>
+            <div id="sidenavelement" class="sidenav">
+                <a href="#">Home</a>
+                <a href="#">Timeline</a>
+                <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+                <a class="hidden_sidebar_sports" href="#">Sports Home</a>
+                <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+                <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+                <a class="hidden_sidebar_sports" href="../gamedayWalkthrough/gameday.html">Gameday Walkthrough</a>
+                <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+                <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+                <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+                <a class="hidden_sidebar_trad" href="#">THWG</a>
+                <a class="hidden_sidebar_trad" href="#">Mascots</a>
+                <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+                <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+                <a class="hidden_sidebar_camp" href="#">Student Center</a>
+                <a class="hidden_sidebar_camp" href="#">The CULC</a>
+                <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+                <a></a>
+            </div>
+            <div id="dimscreen"></div>
+            <div id="header">
+                <div class="navigation">
+                    <a onclick="opencloseSideBar();startpauseVideo()" class="logo-custom">T</a>
+                </div>
+                <div id="timelineBar">
+                    <ul id="times">
+                        <li><a href="#/" onclick="updatePage(1)">Yellow Jacket Alley</a></li>
+                        <li><a href="#/" onclick="updatePage(2)">Freshman Hill</a></li>
+                        <li><a href="#/" onclick="updatePage(3)">Rideout</a></li>
+                        <li><a href="#/" onclick="updatePage(4)">Kickoff</a></li>
+                        <li><a href="#/" onclick="updatePage(5)">Touchdown!</a></li>
+                        <li><a href="#/" onclick="updatePage(6)">Halftime</a></li>
+                        <li><a href="#/" onclick="updatePage(7)">The Flag</a></li>
+                        <li><a href="#/" onclick="updatePage(8)">Budweiser</a></li>
+                        <li><a href="#/" onclick="updatePage(9)">Post Game</a></li>
+                    </ul>
+                </div>
+                <div class="openingimageshow">
+                    <video id="slide1" id="openVideo" autoplay controls loop>
+                        <source src="../videos/YJA.mp4" type="video/mp4"> <!--Credit to Caroline Means' mom-->
+                    </video> 
+                    <video id="slide2" id="openVideo" autoplay controls loop>
+                        <source src="../videos/FreshmanHill.mp4" type="video/mp4"> <!--Credit to Caroline Means' mom-->
+                    </video>
+                    <video id="slide3" id="openVideo" autoplay controls loop>
+                        <source src="../videos/Rideout.mp4" type="video/mp4"> <!--Credit to Caroline Means' mom-->
+                    </video>
+                    <img id="slide4" src="../images/Kickoff.jpeg" alt="https://yellowjackedup.com/2020/03/05/georgia-tech-football-what-will-the-jackets-do-at-kicker/">
+                    <img id="slide5" src="../images/GTFlag.jpg" alt="https://ramblinwreck.com/wp-content/uploads/2019/11/NCSU_112119_DK-90.jpg">
+                    <video id="slide6" id="openVideo" autoplay controls loop>
+                        <source src="../videos/BandHalftime.mp4" type="video/mp4"> <!--Credit to Taylor Gray-->
+                    </video> 
+                    <img id="slide7" src="../images/Flag.jpg">
+                    <img id="slide8" src="../images/mantle-songs.jpg">
+                    <video id="slide9" id="openVideo" autoplay controls loop>
+                        <source src="../videos/Horse.mp4" type="video/mp4"> <!--Credit to Caroline Means' mom-->
+                    </video>
+                </div>
+            </div>
+            <div id="bodyText">
+                <div id="text1" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Yellow Jacket Alley<br>2.5 hours before kickoff</h1>
+                    </div>
+                    <div class="textgriditem" style="margin-top: 7vw;">
+                        <p>Kicking off the Football gameday is this time honored tradition. The road between Peters Parking Deck and various Tech greek life, or Brittain Drive NW,
+                            is the location of Yellow Jacket Alley. Ramblin Reck Club members, Band, Spirit, and Colorguard form a sort of tunnel for the team to
+                            go through. Then a procession lead by the Reck, followed by Buzz, the drumline, and the football team will walk through. Lastly, when the Reck gets
+                            to the end it will make a turn up Freshman Hill and everyone will collapse in behind the football team to close out Yellow Jacket Alley. This is a fantastic experience and a great way to start off what is always a memorable
+                            and beloved day watching our Jackets play ball.</p>
+                    </div>
+                    <div class="imagegriditems">
+                        <img class="backImageMantle" src="../images/YJA.JPG" alt="https://cdn.vox-cdn.com/thumbor/Jric1ClE-Nu_ZUTA7OrDHoSH9d8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/11555741/IMG_E5817.JPG">
+                    </div>
+                </div>
+                <div id="text2" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Freshman Hill<br>1 hour before kickoff</h1>
+                    </div>
+                    <div class="textgriditem" style="margin-top: 3vw;">
+                        <p>Next on the list of exhilirating events pre gameday is watching the beloved Reck drive down Freshman Hill (Bobby Dodd Way NW). Flanked by members of the Ramblin
+                            Reck Club and followed by the band playing iconic Georgia Tech fight songs, this is always a great way to get pumped for gameday and to also get a close look
+                            at one of the most memorable mascots in all of college sports! The procession is usually led by two police escorts, and after driving down the hill, the 
+                            Reck will speed up and make the right turn into the Stadium. The Reck is then followed by the enthusiastic Ramblin Reck Club members as they also run into the Stadium
+                            following the Reck.
+                        </p>
+                    </div>
+                    <div class="imagegriditems">
+                        <img src="../images/freshmanHillBand.jpg" alt="https://news.gatech.edu/sites/default/files/band_uniform.jpg" class="backImageMantle">
+                    </div>
+                </div>
+                <div id="text3" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Reck Ride Out<br>5 minutes before Kickoff</h1>
+                    </div>
+                    <div class="textgriditem" style="margin-top: 7.5vw;">
+                        <p>One of, if not the most iconic entrance in college football is something you can not miss. The Reck, as it has ever since September 30, 1961, leads the football
+                            team out on the field to the cheers of fans as they excitedly wait for their Yellow Jackets to take the field and pummel their opponent.
+                    </p>
+                    </div>
+                    <div class="imagegriditems">
+                        <img src="../images/ReckRideOut.PNG" alt="https://news.gatech.edu/sites/default/files/band_uniform.jpg" class="backImageMantle"> <!--Credit to Whitney Miller-->
+                    </div>
+                </div>
+                <div id="text4" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Kickoff<br>Toe Meets Leather</h1>
+                    </div>
+                    <div class="textgriditem" style="grid-column-end: 3; width: 90vw;">
+                        <p style="font-size: 250%;">The game has begun! GOOOOOOO JACKETS!</p>
+                    </div>
+                </div>
+                <div id="text5" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Jackets Score!</h1>
+                    </div>
+                    <div class="textgriditem" style="margin-top: 8.25vw;">
+                        <p>There are usually two fight songs that fans chant after the Yellow Jackets score a touchdown. Immediately after the touchdown,
+                            fans chant one of our fight songs: "Up With the White and Gold", but remember to quiet down near the end to make sure our kicker
+                            has all the silence to make the point after try! After that, once the kicker makes the point after kick, the fans chant
+                            the iconic "Ramblin Wreck From Georgia Tech" fight song, followed by a repetitive Go Jackets! chant. Hopefully you'll get to those
+                            a bunch throughout the game!</p>
+                    </div>
+                    <video class="imagegriditems" style="margin-left: 5vw;" autoplay controls>
+                        <source src="../videos/fightSongVideo.mp4" type="video/mp4"> <!--Credit to Keshav Ramanathan-->
+                    </video>
+                </div>
+                <div id="text6" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Halftime Show</h1>
+                    </div>
+                    <div class="textgriditems" style="margin-top: 8.25vw;">
+                        <p>Take the time to rest and relax, but also remember to not miss out on the Band's entertaining halftime show! They always put on a 
+                            spectacle with fantastic music, combined with visually appealing formations, and an overall entertaining experience.</p>
+                    </div>
+                    <div class="imagegriditems">
+                        <img src="../images/GTBand.png" alt="https://marchingband.gatech.edu/sites/default/files/video2019/MarchingBandFallback5.png" class="backImageMantle">
+                    </div>
+                </div>
+                <div id="text7" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Flag Over The Student Section<br>5 minutes before the 4th quarter</h1>
+                    </div>
+                    <div class="textgriditem" style="margin-top: 8.25vw;">
+                        <p>If you are in the Swarm Student Section, congrats! You get to experience being inside making the Flag what it is. Usually right
+                            before the third quarter, Ramblin Reck Club members toss down a large flag over the student section, and the student underneath jump
+                            and hit the flag causing it to have a wavy formation that looks very cool from the outside, and is very fun from the inside. After a couple of
+                            minutes of it waving to show off our GT pride, it quickly gets unfurled down to other members of the Ramblin Reck Club to be
+                            taken safely to storage.</p>
+                    </div>
+                    <video class="imagegriditems" style="margin-left: 5vw;" autoplay controls>
+                        <source src="../videos/insideFlag.mp4" type="video/mp4"> <!--Credit to Keshav Ramanathan-->
+                    </video>
+                </div>
+                <div id="text8" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Budweiser!<br>End of the 3rd quarter</h1>
+                    </div>
+                    <div class="textgriditem" style="grid-column-end: 3; width: 90vw;">
+                        <p>One of the most popular traditions at Georgia Tech is the Budweiser Song. 
+                            The song was at one point played multiple times through football games, but is now played between the 3rd and 4th quarters of every football game – taking the place of the song Dixie. 
+                            It was originally written by Steve Karmen and became popular after it was heard in a Budweiser commercial. During the song, it is tradition for all the Georgia Tech fans to bob up and down throughout the song.
+                             Make sure to get next to some friends and alternate bobbing up and down!</p>
+                    </div>
+                </div>
+                <div id="text9" class="gridcontainer">
+                    <div class="headergriditem">
+                        <h1>Post Game<br>The Horse</h1>
+                    </div>
+                    <div class="textgriditem" style="margin-top: 6.25vw;">
+                        <p>If you stay long enough after the end of the game, the entire event is ended by the Band's playing of "The Horse". While the event starts off very calm,
+                            with the band playing a fun tune and people dancing along to it, the craziness happens between the first and second verse of the song. Fans and Band Members run
+                            and try to spread out as far as they can (or for some reason get as high up in the stadium as they can) before the band starts playing the second verse of the song,
+                            upon which everyone starts dancing to the tune again. Win or lose, this is an extremely fun experience and one you should never miss if given the chance.</p>
+                    </div>
+                    <div class="imagegriditems">
+                        <img src="../images/TheHorse.jpg" alt="https://ramblinwreck.com/wp-content/uploads/2019/09/USF_090719_DK-95.jpg" class="backImageMantle">
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
