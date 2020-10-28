@@ -260,3 +260,9 @@ body {
     display: none !important;
     font-size: 130% !important;
 }
+
+.listgriditem li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
