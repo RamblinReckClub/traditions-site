@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../styles/main.css"/>
+    <link rel="stylesheet" href="../styles/pageTemplate.css"/>
+    <link rel="stylesheet" href="../styles/navbar.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="../scripts/vendor/modernizr.js"></script>
+    <script src="../scripts/navbar.js"></script>
+  </head>
+  <body>
+    <div>
+        <div id="sidenavelement" class="sidenav">
+            <a href="#">Home</a>
+            <a href="#">Timeline</a>
+            <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+            <a class="hidden_sidebar_sports" href="#">Sports Home</a>
+            <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+            <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+            <a class="hidden_sidebar_sports" href="#">Records</a>
+            <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+            <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+            <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+            <a class="hidden_sidebar_trad" href="#">THWG</a>
+            <a class="hidden_sidebar_trad" href="#">Mascots</a>
+            <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+            <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+            <a class="hidden_sidebar_camp" href="#">Student Center</a>
+            <a class="hidden_sidebar_camp" href="#">The CULC</a>
+            <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+            <a></a>
+        </div>
+        <div id="dimscreen"></div>
+        <div id="header">
+            <div class="navigation">
+                <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+            </div>
+        </div>
+    </div>
+    <div class="mantle">
+        <div class="row">
+            <div class="col-xs-16 col-md-12 mantle-image"> 
+                <img class="mainImage" src="../images/traditions-history/buzz-1.jpg"/> <!--Change here with seperate, relevant image-->
+            </div>
+            <div class="col-xs-16 col-md-4">
+                <div class="cover-text">
+                    <div>
+                        <h1>Buzz <!--Add the name of the page here-->
+                            <div class="accent-bottom"></div>
+                        </h1>
+                    </div> 
+                    <img src="../images/year-1972.png"/> <!--Change here with seperate image....If you can make more of the year things-->
+                    <div class="slogan">"Everyone's favorite mascot"</div> <!--Change here with a quick description or something like Go Jackets!...See the original site for motivation-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainGrid"> <!--Add elements to the right spot...To the left and right, an entire element is what serves within each div tag-->
+        <div class="leftMainGrid"> <!--Add elements here to add to the left side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#FFFFFF; margin-top: 10vh;"> <!--margin-top expresses the space between one element to the next-->
+                <img src="../images/traditions-history/buzz-2.jpg" style="height: 30vh;"> <!--You can specify specific elements using style=....Like change heights, colros, etc...-->
+            </div>
+        </div>
+        <div class="centerMainGrid"> <!--This is where the main text goes...Create a new p tag for each new paragraph you want-->
+            <p>One of the best parts of being a Yellow Jacket is that we have not only one, but two iconic mascots: The Ramblin Reck and Buzz the Yellow Jacket. We all know and love the hilarious and energetic Yellow Jacket that pumps up the crowds at sporting events and lifts up the spirits of Tech students. A lot has happened to make Buzz what he is today.</p>
+            <p>The story behind our Yellow Jacket symbol dates back to the early 1900’s when our first athletic teams were fielded. They had yet to choose an official name, so sports writers had taken to giving us nicknames such as The Engineers, the Blacksmiths, the Techs, and the Golden Tornadoes, but the school didn’t officially take up any of these names. It was actually actual yellow jackets that our fans wore in support of our team that gave us the name we go by now. The term Yellow Jackets was used to describe our fans, and in 1905, John Heisman declared that he wanted our team to be known as the Georgia Tech Yellow Jackets.</p>
+            <p>It wasn’t until the 1970’s that a human yellow jacket made its first appearance. In 1972, equipped with a homemade costume, Judy McNair began performing at football games. By 1980, the President of Ramblin’ Reck Club, Mark Loch, received approval from the cheerleading advisor and a grant from SGA to help fund a custom Yellow Jacket costume, equipped with black and yellow fur, white gloves, black tights, and Converse high-tops. The grant also helped send the first official Buzz, Rickie Bland, to mascot camp at Virginia Tech. Buzz officially made his first appearance as a member of the cheerleading squad on October 11, 1980. Rickie Bland brought Buzz to life and set the standard to make Buzz what he is today. Over the years, Buzz has become a staple at Tech athletic events. His antics keep us constantly laughing and he is the envy of all mascots. Nowadays, several students split the duties of performing as Buzz and keep their identities a secret until graduation in order to maintain the tradition of Buzz as one of our beloved mascots!</p>
+        </div>
+        <div class="rightMainGrid"> <!--Add elements here to add to the right side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#B3A369; margin-top: 10vh;">
+                <video controls> <!--You can add more elements like autoplay, muted, etc.... Look up html video tag...Add any video to the video folder-->
+                    <source src="../videos/Buzz.mp4" type="video/mp4">
+                </video> 
+                <p class="caption">Buzz on gameday</p>
+            </div>
+        </div>
+    </div> 
+    <footer class="l-site-footer"></footer>    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+</html>
