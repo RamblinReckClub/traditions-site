@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Historical Timeline of Tech</title>
+		<meta name="description" content="An interactive timeline to view major events in Georgia Tech history, with links to more information on each event">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/main.css"/>
+		<link rel="stylesheet" href="interactive_timeline.css">
+		<link rel="stylesheet" href="../styles/navbar.css"/>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+		<script src="../scripts/vendor/modernizr.js"></script>
+		<script src="../scripts/navbar.js"></script>
+		<script type="text/javascript" src="interactive_timeline.js"></script>
+	</head>
+	<body>
+		<div>
+			<div id="sidenavelement" class="sidenav">
+                <a href="#">Home</a>
+                <a href="#">Timeline</a>
+                <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+                <a class="hidden_sidebar_sports" href="#">Sports Home</a>
+                <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+                <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+                <a class="hidden_sidebar_sports" href="#">Records</a>
+                <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+                <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+                <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+                <a class="hidden_sidebar_trad" href="#">THWG</a>
+                <a class="hidden_sidebar_trad" href="#">Mascots</a>
+                <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+                <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+                <a class="hidden_sidebar_camp" href="#">Student Center</a>
+                <a class="hidden_sidebar_camp" href="#">The CULC</a>
+                <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+                <a></a>
+            </div>
+			<div id="dimscreen"></div>
+            <div class="navigation">
+                <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+            </div>
+		</div>
+		<div id="history_timeline">
+			<ul id="years">
+				<li><button type="button" onclick="open_years('1880', 1)">1880</button></li>
+				<li><button type="button" onclick="open_years('1890', 3)">1890</button></li>
+				<li><button type="button" onclick="open_years('1900', 5)">1900</button></li>
+				<li><button type="button" onclick="open_years('1910', 7)">1910</button></li>
+				<li><button type="button" onclick="open_years('1920', 9)">1920</button></li>
+				<li><button type="button" onclick="open_years('1930', 11)">1930</button></li>
+				<li><button type="button" onclick="open_years('1940', 13)">1940</button></li>
+				<li><button type="button" onclick="open_years('1950', 15)">1950</button></li>
+				<li><button type="button" onclick="open_years('1960', 17)">1960</button></li>
+				<li><button type="button" onclick="open_years('1970', 19)">1970</button></li>
+				<li><button type="button" onclick="open_years('1980', 21)">1980</button></li>
+				<li><button type="button" onclick="open_years('1990', 23)">1990</button></li>
+				<li><button type="button" onclick="open_years('2000', 25)">2000</button></li>
+				<li><button type="button" onclick="open_years('2010', 27)">2010</button></li>
+				<li><button type="button" onclick="open_years('2020', 29)">2020</button></li>
+			</ul>
+		</div>
+		<div id="timeline_text">
+			<ul id="info">
+				<li id="1885"><h1>1885</h1></li>
+				<li>
+					<div class="timeline_event">
+						<h2>October 13th- Georgia Tech is Founded</h2>
+						<img src="../images/buzz_shoes.jpg">
+						<p>This is some sample text about how GT was founded if you want for info click on some things</p>
+					</div>
+				</li>
+				<li id="1888"><h1>1888</h1></li>
+				<div class="timeline_event">
+					<li><h2>October 5th- Georgia Tech Opens for Classes</h2></li>
+					<li><p>In the first batch, there were 84 students that were enrolled.</p></li>
+				</div>
+				<div class="timeline_event">
+					<li><h2>October 10th- Random Thing</h2></li>
+					<li><p>Thing.</p></li>
+				</div>
+				<li id="1896"><h1>1896</h1></li>
+				<div class="timeline_event">
+					<li><h2>The Whistle Arrives to Georgia Tech</h2></li>
+					<li><p>The whistle mimicked whistles at the time. Now it is operated by a computerized atomic clock that releases the steam. 
+					   	   The whistle blows to signify the end of classes and touchdowns at home games.
+					</p></li>
+				</div>
+				<li id="1890"><h1>1890</h1></li>
+				<div class="timeline_event">
+					<li><h2>Test Header</h2></li>
+					<li><p>Test Text.</p></li>
+				</div>
+				<li id="1900"><h1>1900</h1></li>
+				<div class="timeline_event">
+					<li><h2>Test Header</h2></li>
+					<li><p>Test Text.</p></li>
+				</div>
+				<li id="1993"><h1>1993</h1></li>
+				<div class="timeline_event">
+					<li><h2>Test Header</h2></li>
+					<li><p>Test Text.</p></li>
+				</div>
+			</ul>
+		</div>
+	</body>
+</html>
