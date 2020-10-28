@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../styles/main.css"/>
+    <link rel="stylesheet" href="../styles/pageTemplate.css"/>
+    <link rel="stylesheet" href="../styles/navbar.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="../scripts/vendor/modernizr.js"></script>
+    <script src="../scripts/navbar.js"></script>
+  </head>
+  <body>
+    <div>
+        <div id="sidenavelement" class="sidenav">
+            <a href="#">Home</a>
+            <a href="#">Timeline</a>
+            <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+            <a class="hidden_sidebar_sports" href="#">Sports Home</a>
+            <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+            <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+            <a class="hidden_sidebar_sports" href="#">Records</a>
+            <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+            <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+            <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+            <a class="hidden_sidebar_trad" href="#">THWG</a>
+            <a class="hidden_sidebar_trad" href="#">Mascots</a>
+            <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+            <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+            <a class="hidden_sidebar_camp" href="#">Student Center</a>
+            <a class="hidden_sidebar_camp" href="#">The CULC</a>
+            <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+            <a></a>
+        </div>
+        <div id="dimscreen"></div>
+        <div id="header">
+            <div class="navigation">
+                <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+            </div>
+        </div>
+    </div>
+    <div class="mantle">
+        <div class="row">
+            <div class="col-xs-16 col-md-12 mantle-image"> 
+                <img class="mainImage" src="../images/traditions-history/cakerace2.jpg"/> <!--Change here with seperate, relevant image-->
+            </div>
+            <div class="col-xs-16 col-md-4">
+                <div class="cover-text">
+                    <div>
+                        <h1>Freshman Cake Race <!--Add the name of the page here-->
+                            <div class="accent-bottom"></div>
+                        </h1>
+                    </div> 
+                    <div class="slogan">"Georgia Tech's sweetest tradition"</div> <!--Change here with a quick description or something like Go Jackets!...See the original site for motivation-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainGrid"> <!--Add elements to the right spot...To the left and right, an entire element is what serves within each div tag-->
+        <div class="leftMainGrid"> <!--Add elements here to add to the left side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#FFFFFF; margin-top: 10vh;"> <!--margin-top expresses the space between one element to the next-->
+                <img src="../images/traditions-history/cakerace.jpg" style="height: 30vh;"> <!--You can specify specific elements using style=....Like change heights, colros, etc...-->
+            </div>
+        </div>
+        <div class="centerMainGrid"> <!--This is where the main text goes...Create a new p tag for each new paragraph you want-->
+            <p>In 1911, the first Cake Race was held as an open cross-country run at Georgia Tech. Two years later, some of the faculty member’s wives started baking cakes for the winners, thus the name Cake Race. Often times, the track coach would go to the race to scout out boys for the track team. In 1935, the Cake Race became a part of Homecoming events in which freshman were required to run. Homecoming week grew with more events each year and in 1954 they began the tradition of electing the Georgia Tech Homecoming Queen. After the Cake Race, the freshman male winner won his cake along with a kiss from the homecoming queen.</p>
+            <p>On campus today, the Cake Race is held before sunrise on the morning of the Homecoming game. The course has been shortened to half a mile and freshman are no longer required, but strongly encouraged to take part in the race. The finish line is located on top of Freshman Hill near Bobby Dodd Stadium where all freshmen receive cupcakes at the finish and the winners receive their cakes. During halftime at the Homecoming game, Mr. and Ms. Georgia Tech give a kiss to the Cake Race winners on the field.</p>
+        </div>
+        <div class="rightMainGrid"> <!--Add elements here to add to the right side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#B3A369; margin-top: 10vh;">
+                <video controls> <!--You can add more elements like autoplay, muted, etc.... Look up html video tag...Add any video to the video folder-->
+                    <source src="../videos/FCR.mp4" type="video/mp4">
+                </video> 
+                <p class="caption">Video from the Freshman Cake Race</p>
+            </div>
+            <div style="background-color:#B3A369; margin-top: 10vh; border: .5vh solid black;">
+                <p class="sideText"><a href=https://youtu.be/7ZbW9P1A7xY>Click here to watch a video to learn more!</a></p>
+            </div>
+        </div>
+    </div> 
+    <footer class="l-site-footer"></footer>    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+</html>

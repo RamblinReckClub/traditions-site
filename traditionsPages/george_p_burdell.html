@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../styles/main.css"/>
+    <link rel="stylesheet" href="../styles/pageTemplate.css"/>
+    <link rel="stylesheet" href="../styles/navbar.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="../scripts/vendor/modernizr.js"></script>
+    <script src="../scripts/navbar.js"></script>
+  </head>
+  <body>
+    <div>
+        <div id="sidenavelement" class="sidenav">
+            <a href="#">Home</a>
+            <a href="#">Timeline</a>
+            <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+            <a class="hidden_sidebar_sports" href="#">Sports Home</a>
+            <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+            <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+            <a class="hidden_sidebar_sports" href="#">Records</a>
+            <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+            <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+            <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+            <a class="hidden_sidebar_trad" href="#">THWG</a>
+            <a class="hidden_sidebar_trad" href="#">Mascots</a>
+            <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+            <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+            <a class="hidden_sidebar_camp" href="#">Student Center</a>
+            <a class="hidden_sidebar_camp" href="#">The CULC</a>
+            <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+            <a></a>
+        </div>
+        <div id="dimscreen"></div>
+        <div id="header">
+            <div class="navigation">
+                <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+            </div>
+        </div>
+    </div>
+    <div class="mantle">
+        <div class="row">
+            <div class="col-xs-16 col-md-12 mantle-image"> 
+                <img class="mainImage" src="../images/blueprint/gpb74.jpg"/> <!--Change here with seperate, relevant image-->
+            </div>
+            <div class="col-xs-16 col-md-4">
+                <div class="cover-text">
+                    <div>
+                        <h1>George P. Burdell <!--Add the name of the page here-->
+                            <div class="accent-bottom"></div>
+                        </h1>
+                    </div> 
+                    <div class="slogan">"The man.  The myth.  The legend."</div> <!--Change here with a quick description or something like Go Jackets!...See the original site for motivation-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainGrid"> <!--Add elements to the right spot...To the left and right, an entire element is what serves within each div tag-->
+        <div class="leftMainGrid"> <!--Add elements here to add to the left side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#FFFFFF; margin-top: 10vh;"> <!--margin-top expresses the space between one element to the next-->
+                <img src="../images/traditions-history/George_P_Burdell.jpg" style="height: 4-vh;"> <!--You can specify specific elements using style=....Like change heights, colros, etc...-->
+                <p class="caption">Cartoon depiction of George P. Burdell</p>
+            </div>
+        </div>
+        <div class="centerMainGrid"> <!--This is where the main text goes...Create a new p tag for each new paragraph you want-->
+            <p>In 1927, William Edgar Smith was mistakenly sent two enrollment forms from Georgia Tech. At the time, Smith attended Richmond Academy in Augusta, Georgia; the president of the academy was George P. Butler, a former UGA football captain. Smith decided to play a prank and enroll the president to Georgia Tech, but he changed the name to George P. Burdell at the last moment. After Burdell was accepted, Smith decided to continue his prank and enrolled Burdell in all of the same classes. With the help of some of his friends, Smith completed an extra copy of homework assignments, mixing up some of the answers and changing his hand writing style so none of the professors would catch on.</p>
+            <p>Years later, Burdell successfully completed his classes and graduated with a BS degree in Mechanical Engineering in 1930. After graduating, Burdell went back to school and received his master’s degree in Mechanical Engineering. Since then, Burdell has made many achievements and has been quite a hero. Burdell flew a B-17 Bomber with the Airforce in England in WWII and has been documented as serving in just about every war since then. He has also served on the board of directors of MAD magazine, received a varsity letter in basketball at Tech, traveled the world, and even lead online polls for the ‘Person of the Year’ by Time Magazine.</p>
+            <p>After dealing with more enrollment attempts by Burdell, Georgia Tech required students to register for classes through computers in 1969. To keep the prank alive, some students came together and hacked the system and registered Burdell for every class available that quarter which totaled out at over 3,000 hours. Even after the institute made changes to the registration system, Burdell was victorious again in 1975 and 1980. The legend of George P. Burdell lives on at Georgia Tech and he is a member at most local Atlanta churches, he is often found on sign-ups for events around campus, and he even has a Facebook page.</p>
+        </div>
+        <div class="rightMainGrid"> <!--Add elements here to add to the right side (Images, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#FFFFFF; margin-top: 10vh;"> <!--margin-top expresses the space between one element to the next-->
+                <img src="../images/blueprint/gbp78.jpg" style="height: 40vh;"> <!--You can specify specific elements using style=....Like change heights, colros, etc...-->
+                <p class="caption">George P. Burdell's birthday cake</p>
+            </div>
+        </div>
+    </div> 
+    <footer class="l-site-footer"></footer>    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+</html>
