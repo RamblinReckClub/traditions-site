@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../styles/main.css"/>
+    <link rel="stylesheet" href="../styles/pageTemplate.css"/>
+    <link rel="stylesheet" href="../styles/navbar.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="../scripts/vendor/modernizr.js"></script>
+    <script src="../scripts/navbar.js"></script>
+  </head>
+  <body>
+    <div>
+        <div id="sidenavelement" class="sidenav">
+            <a href="#">Home</a>
+            <a href="#">Timeline</a>
+            <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+            <a class="hidden_sidebar_sports" href="../Sports/sportsHomePage.html">Sports Home</a>
+            <a class="hidden_sidebar_sports" href="#">Current Coaches</a>
+            <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+            <a class="hidden_sidebar_sports" href="#">Records</a>
+            <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+            <a class="hidden_sidebar_trad" href="#">Homecoming</a>
+            <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+            <a class="hidden_sidebar_trad" href="#">THWG</a>
+            <a class="hidden_sidebar_trad" href="#">Mascots</a>
+            <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+            <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+            <a class="hidden_sidebar_camp" href="#">Student Center</a>
+            <a class="hidden_sidebar_camp" href="#">The CULC</a>
+            <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+            <a></a>
+        </div>
+        <div id="dimscreen"></div>
+        <div id="header">
+            <div class="navigation">
+                <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+            </div>
+        </div>
+    </div>
+    <div class="mantle">
+        <div class="row">
+            <div class="col-xs-16 col-md-12 mantle-image"> 
+                <img class="mainImage" src="../images/BHeppler.jpg" alt="https://ramblinwreck.com/wp-content/uploads/2019/09/CCC_090819_DK-07-e1585600644582.jpg"/> <!--Change here with seperate, relevant image-->
+            </div>
+            <div class="col-xs-16 col-md-4">
+                <div class="cover-text">
+                    <div>
+                        <h1>Bruce Heppler<!--Add the name of the page here-->
+                            <div class="accent-bottom"></div>
+                        </h1>
+                    </div> 
+                    <div class="slogan">Head coach of Tech's Golf Team</div> <!--Change here with a quick description or something like Go Jackets!...See the original site for motivation-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainGrid"> <!--Add elements to the right spot...To the left and right, an entire element is what serves within each div tag-->
+        <div class="leftMainGrid"> <!--Add elements here to add to the left side (Images, videos, audio, notes with hyperlink, etc...)-->
+        </div>
+        <div class="centerMainGrid"> <!--This is where the main text goes...Create a new p tag for each new paragraph you want-->
+            <p>Bruce Heppler has had one of the most consistently successful careers of any Georgia Tech coach. Heppler hails from St. George, Utah and attended Brigham Young University for his undergraduate degree in accounting. He later attended the University of Massachusetts to attain his graduate degree in sports management.</p>
+            <p>He became the head coach in 1995 and since then has guided the Yellow Jackets to the NCAA Tournament every year since 1998. Since 1998, Georgia Tech has earned more automatic entries to the NCAA Tournament than any other school except Clemson. Additionally, the Georgia Tech team has performed outstandingly well in the classroom. They have earned a perfect academic progress report of 1000 for 13 straight years, and every single senior has graduated.</p>
+            <p>Heppler has won 13 ACC Conference Championships and has been named ACC Coach of the Year 10 times. He has set a new precedent for what it means to be a golfer at Tech and has created one of the most successful golf programs in the entire nation.</p>
+        </div>
+        <div class="rightMainGrid"> <!--Add elements here to add to the right side (Images, videos, audio, notes with hyperlink, etc...)-->
+        </div>
+    </div> 
+    <footer class="l-site-footer"></footer>    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+</html>
