@@ -215,3 +215,18 @@ body {
 .navigation .logo-custom:hover{
     background-color: rgba(255, 255, 255, 1);
 }
+
+.clickOn {
+    color:black;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+}
+
+.clickOn:hover {
+    color: black;
+}
+
+.clickOn:visited {
+    color: black;
+}
