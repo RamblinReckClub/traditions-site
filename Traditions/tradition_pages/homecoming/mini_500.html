@@ -11,12 +11,12 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="../styles/main.css"/>
-    <link rel="stylesheet" href="../styles/pageTemplate.css"/>
-    <link rel="stylesheet" href="../styles/navbar.css"/>
+    <link rel="stylesheet" href="../../../styles/main.css"/>
+    <link rel="stylesheet" href="../../../styles/pageTemplate.css"/>
+    <link rel="stylesheet" href="../../../styles/navbar.css"/>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
-    <script src="../scripts/vendor/modernizr.js"></script>
-    <script src="../scripts/navbar.js"></script>
+    <script src="../../../scripts/vendor/modernizr.js"></script>
+    <script src="../../../scripts/navbar.js"></script>
   </head>
   <body>
     <div>
@@ -50,28 +50,40 @@
     <div class="mantle">
         <div class="row">
             <div class="col-xs-16 col-md-12 mantle-image"> 
-                <img class="mainImage" src="../images/mantle-goldfellas.jpg"/> <!--Change here with seperate, relevant image-->
+                <img class="mainImage" src="../../../images//traditions-history/mini500.jpg"/> <!--Change here with seperate, relevant image-->
             </div>
             <div class="col-xs-16 col-md-4">
                 <div class="cover-text">
                     <div>
-                        <h1>Goldfellas <!--Add the name of the page here-->
+                        <h1>Mini 500 <!--Add the name of the page here-->
                             <div class="accent-bottom"></div>
                         </h1>
                     </div> 
-                    <div class="slogan">&quot;Yellow!...Jackets!...&quot;</div> <!--Change here with a quick description or something like Go Jackets!...See the original site for motivation-->
+                    <div class="slogan">"A feat of human will and engineering"</div> <!--Change here with a quick description or something like Go Jackets!...See the original site for motivation-->
                 </div>
             </div>
         </div>
     </div>
     <div class="mainGrid"> <!--Add elements to the right spot...To the left and right, an entire element is what serves within each div tag-->
-        <div class="leftMainGrid"> <!--Add elements here to add to the left side (Images, videos, audio, notes with hyperlink, etc...)-->
+        <div class="leftMainGrid"> <!--Add elements here to add to the left side (../images/, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#FFFFFF; margin-top: 10vh;"> <!--margin-top expresses the space between one element to the next-->
+                <img src="../../../images//blueprint/mini50081_2.jpg" style="height: 30vh;"> <!--You can specify specific elements using style=....Like change heights, colros, etc...-->
+            </div>
         </div>
         <div class="centerMainGrid"> <!--This is where the main text goes...Create a new p tag for each new paragraph you want-->
-            <p>The Goldfellas are a group of Georgia Tech super fans that paint their bodies at ever home football games. They first appeared during the 1998 Homecoming game versus the University of Virginia, which Georgia Tech won 41-38 and ever since the Goldfellas have been a staple at every home game since. </p>
-            <p>Their walk to the game is an elaborate parade consisting of three phases- the March, the Chant, and the Run. The March begins at the Howey Physics building half an hour before the game. The Goldfellas march in a single file line singing the traditional Georgia Tech songs until they reach the intersection of Techwood Drive and Bobby Dodd Way. At that intersection, the Chant begins with “Ghetto Buzz” leading the Goldfellas and the rest of the crowd in cheers such as “The Good Word”. After the Chant is completed the Run begins. The Goldfellas run from the intersection of Techwood and Bobby Dodd to the south entrance of Bobby Dodd Stadium, where the Walk is completed.</p>
+            <p>The Mini 500 is an annual tricycle race around Peters Parking Deck that occurs on the Friday afternoon before the homecoming football game. It is one of Georgia Tech’s most unique traditions put on by Ramblin’ Reck Club since 1969. Teams are comprised of seven members: 4 to take turns as the driver and three on the pit crew. Each team is required to rotate the front tire of their tricycle three times throughout the course of the race. All teams try to complete 8 laps without destroying their tricycle.</p>
+            <p>Some teams utilize their engineering skill set, as necessary (but restricted) reinforcement of the tricycle is imperative to a team’s success. The Mini 500 is without a doubt one of the most entertaining events of Homecoming week and is definitely something you won’t want to miss!</p>
         </div>
-        <div class="rightMainGrid"> <!--Add elements here to add to the right side (Images, videos, audio, notes with hyperlink, etc...)-->
+        <div class="rightMainGrid"> <!--Add elements here to add to the right side (../images/, videos, audio, notes with hyperlink, etc...)-->
+            <div style="background-color:#B3A369; margin-top: 10vh;">
+                <video controls> <!--You can add more elements like autoplay, muted, etc.... Look up html video tag...Add any video to the video folder-->
+                    <source src="../../../videos/mini500.mp4" type="video/mp4">
+                </video> 
+                <p class="caption">Video from the Mini 500</p>
+            </div>
+            <div style="background-color:#B3A369; margin-top: 10vh; border: .5vh solid black;">
+                <p class="sideText"><a href=https://youtu.be/VF45Fb0uPU4>Click here to watch a video to learn more!</a></p>
+            </div>
         </div>
     </div> 
     <footer class="l-site-footer"></footer>    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
