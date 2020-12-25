@@ -1,0 +1,102 @@
+body {
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "a c"
+    "a c"
+    "a d"
+    "a d"
+    "a d"
+    "a d"
+    "a d";
+    max-width: 80vw;
+    margin-top: 10vh;
+    max-height: 80vh;
+    margin-left: 10vw;
+}
+
+.imageGrid {
+    grid-area: a;
+    max-height: 80vh;
+    width: 36vw;
+}
+
+.headerGrid {
+    grid-area: b;
+    text-align: center;
+    font-family: "Georgia";
+    color: white;
+    background-color: #B3A369;
+    max-height: 10vh;
+    width: 40vw;
+}
+
+.textGrid {
+    grid-area: c;
+    max-height: 20vh;
+    width: 40vw;
+}
+
+.tableGrid {
+    grid-area: d;
+    height: 60vh;
+    width: 40vw;
+    overflow: auto;
+}
+
+.link:link{
+    color:blue;
+}
+
+.link:visited{
+    color:blue;
+}
+
+.link:hover{
+    color:rgb(179, 163, 105);
+}
+
+#arrowScrollLeft {
+    position: absolute;
+    top: 50vh;
+    left: 7vw;
+    border: solid black;
+    background-color: white;
+    border-left: .5vh;
+    border-bottom: .5vh;
+    padding: 1.25vh;
+    transform: rotate(-135deg);
+}
+
+#arrowScrollLeft:hover {
+    border: solid #B3A369;
+    border-left: .5vh;
+    border-bottom: .5vh;
+    padding: 1.25vh;
+    transform: rotate(-135deg);
+}
+
+#arrowScrollRight {
+    position: absolute;
+    top: 50vh;
+    left: 92.5vw;
+    border: solid black;
+    background-color: white;
+    border-left: .5vh;
+    border-bottom: .5vh;
+    padding: 1.25vh;
+    transform: rotate(45deg);
+}
+
+#arrowScrollRight:hover {
+    border: solid #B3A369;
+    border-left: .5vh;
+    border-bottom: .5vh;
+    padding: 1.25vh;
+    transform: rotate(45deg);
+}

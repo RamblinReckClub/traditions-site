@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>GT Sports Home Page</title>
+        <meta name="description" content="Home page of sport traditions at Georgia Tech">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+        <link rel="stylesheet" href="coachesHomePage.css"/>
+        <link rel="stylesheet" href="../../styles/main.css"/>
+        <link rel="stylesheet" href="../../styles/navbar.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+        <script src="coachesHomePage.js"></script>
+        <script src="../../scripts/vendor/modernizr.js"></script>
+        <script src="../../scripts/navbar.js"></script>
+    </head>
+    <body onload="looptdroughImages();">
+        <div>
+            <div id="sidenavelement" class="sidenav">
+                <a href="../../index.html">Home</a>
+                <a href="../../interactive_timeline/interactive_timeline.html">Timeline</a>
+                <a onclick="expand_sports()">Sports <i class="arrow"></i></a>
+                <a class="hidden_sidebar_sports" href="../../Sports/home_page/sportsHomePage.html">Sports Home</a>
+                <a class="hidden_sidebar_sports" href="../../Sports/coaches_pages/coachesHomePage.html">Current Coaches</a>
+                <a class="hidden_sidebar_sports" href="#">Notable Alumni</a>
+                <a class="hidden_sidebar_sports" href="../../gamedayWalktdrough/gameday.html">Gameday Walktdrough</a>
+                <a onclick="expand_traditions()">Traditions <i class="arrow"></i></a>
+                <a class="hidden_sidebar_trad" href="../../Traditions/home_page/traditionsHomepage.html">Traditions Home</a>
+                <a class="hidden_sidebar_trad" href="#">Finals Week</a>
+                <a class="hidden_sidebar_trad" href="#">tdWG</a>
+                <a class="hidden_sidebar_trad" href="#">Mascots</a>
+                <a onclick="expand_campus_life()">Campus Life <i class="arrow"></i></a>
+                <a class="hidden_sidebar_camp" href="#">Campus Map</a>
+                <a class="hidden_sidebar_camp" href="#">Student Center</a>
+                <a class="hidden_sidebar_camp" href="#">tde CULC</a>
+                <a class="hidden_sidebar_camp" href="#">Tech Square</a>
+                <a></a>
+            </div>
+            <div id="dimscreen"></div>
+            <div id="header">
+                <div class="navigation">
+                    <a onclick="opencloseSideBar()" class="logo-custom">T</a>
+                </div>
+            </div>
+            <button onclick="clickLeft()" id="arrowScrollLeft"></button>
+            <div class="coachesSlideShow">
+                <div id="coachGrid1" class="gridContainer">
+                    <div class="imageGrid">
+                    <img style="max-width: 36vw; max-height: 80vh; margin-left:5vw; margin-top: 2vh;" src="../../images/CollinsTransparent.png" alt="https://ramblinwreck.com/wp-content/uploads/2020/09/DSK_2074.jpg">
+                    </div>
+                    <h1 class="headerGrid">FOOTBALL</h1>
+                    <div class="textGrid">
+                        <p style="text-align: center; margin-top: 2vh; font-size: 4vh;">Geoff Collins (2019-)</p>
+                        <p style="text-align: center; margin-top: -3vh; font-size: 2.5vh;">Record: 6-16</p>
+                        <p style="text-align: center; margin-top: -3vh; font-size: 3vh;"><a class="link" href="../../Sports/coaches_pages/footballCoach.html">Click here to learn more about Coach Collins!</a></p>
+                    </div>
+                    <div class="tableGrid">
+                        <table>
+                            <tr>
+                                <th colspan="6">Previous Football Head Coaches</th>
+                            </tr>
+                            <tr>
+                                <th>Head Coach</th>
+                                <th>Years Active</th>
+                                <th>Record</td>
+                                <th>Bowl Record</th>
+                                <th>National Championships</th>
+                                <th>Conference Championships</th>
+                            </tr>
+                            <tr>
+                                <td>Paul Johnson</td>
+                                <td>2008-2018</td>
+                                <td>83-60</td>
+                                <td>3-6</td>
+                                <td>0</td>
+                                <td>0<br>(2009 vacated by NCAA)</td>
+                            </tr>
+                            <tr>
+                                <td>Jon Tenuta</td>
+                                <td>2007</td>
+                                <td>0-1</td>
+                                <td>0-1</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Chan Gailey</td>
+                                <td>2002-2007</td>
+                                <td>44-32</td>
+                                <td>2-3</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Mac McWhorter</td>
+                                <td>2001</td>
+                                <td>1-0</td>
+                                <td>1-0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>George O'Leary</td>
+                                <td>1994-2001</td>
+                                <td>52-33</td>
+                                <td>2-2</td>
+                                <td>0</td>
+                                <td>1<br>(1998)</td>
+                            </tr>
+                            <tr>
+                                <td>Bill Lewis</td>
+                                <td>1992-1994</td>
+                                <td>11-19</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bobby Ross</td>
+                                <td>1987-1991</td>
+                                <td>31-26-1</td>
+                                <td>2-0</td>
+                                <td>1<br>(1990)</td>
+                                <td>1<br>(1990)</td>
+                            </tr>
+                            <tr>
+                                <td>Bill Curry</td>
+                                <td>1980-1986</td>
+                                <td>31-43-4</td>
+                                <td>1-0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Pepper Rodgers</td>
+                                <td>1974-1979</td>
+                                <td>34-31-2</td>
+                                <td>0-1</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bill Fulcher</td>
+                                <td>1972-1973</td>
+                                <td>12-10-1</td>
+                                <td>1-0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bud Carson</td>
+                                <td>1967-1971</td>
+                                <td>27-27</td>
+                                <td>1-1</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bobby Dodd</td>
+                                <td>1945-1966</td>
+                                <td>165-64-8</td>
+                                <td>9-4</td>
+                                <td>1<br>(1952)</td>
+                                <td>2<br>(1951, 1952)</td>
+                            </tr>
+                            <tr>
+                                <td>William Alexander</td>
+                                <td>1920-1944</td>
+                                <td>134-95-15</td>
+                                <td>3-2</td>
+                                <td>1<br>(1928)</td>
+                                <td>8<br>(1920, 1921, 1922, 1927, 1928, 1939, 1943, 1944)</td>
+                            </tr>
+                            <tr>
+                                <td>John Heisman</td>
+                                <td>1904-1919</td>
+                                <td>102-29-7</td>
+                                <td>0-0</td>
+                                <td>1<br>(1917)</td>
+                                <td>3<br>(1916, 1917, 1918)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="coachGrid2" class="gridContainer">
+                    <div class="imageGrid">
+                    <img style="max-width: 36vw; max-height: 80vh; margin-left:5vw; margin-top:2vh;" src="../../images/PastnerBackground.jpg" alt="https://ramblinwreck.com/wp-content/uploads/2020/09/DSK_2074.jpg">
+                    </div>
+                    <h1 class="headerGrid">MEN'S BASKETBALL</h1>
+                    <div class="textGrid">
+                        <p style="text-align: center; margin-top: 2vh; font-size: 4vh;">Josh Pastner (2016-)</p>
+                        <p style="text-align: center; margin-top: -3vh; font-size: 2.5vh;">Record: 69-70</p>
+                        <p style="text-align: center; margin-top: -3vh; font-size: 3vh;"><a class="link" href="../../Sports/coaches_pages/mBasketballCoach.html">Click here to learn more about Coach Pastner!</a></p>
+                    </div>
+                    <div class="tableGrid">
+                        <table>
+                            <tr>
+                                <th colspan="6">Previous Basketball Head Coaches</th>
+                            </tr>
+                            <tr>
+                                <th>Head Coach</th>
+                                <th>Years Active</th>
+                                <th>Record</td>
+                                <th>NCAA Tournament Appearances</th>
+                                <th>NCAA Tourney Record</th>
+                                <th>Conference Championships</th>
+                            </tr>
+                            <tr>
+                                <td>Brian Gregory</td>
+                                <td>2011-2016</td>
+                                <td>76-86</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Paul Hewitt</td>
+                                <td>2000-2011</td>
+                                <td>190-162</td>
+                                <td>5<br>(2001, 2004, 2005, 2007, 2010)</td>
+                                <td>7-5</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bobby Cremins</td>
+                                <td>1981-2000</td>
+                                <td>354-237</td>
+                                <td>10<br>(1985-1993, 1996)</td>
+                                <td>15-10</td>
+                                <td>4<br>(1985, 1990, 1993, 1996-regular season only)</td>
+                            </tr>
+                            <tr>
+                                <td>Dwayne Morrison</td>
+                                <td>1973-1981</td>
+                                <td>91-122</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Whack Hyder</td>
+                                <td>1951-1973</td>
+                                <td>292-271</td>
+                                <td>1<br>(1960)</td>
+                                <td>1-1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Roy McArthur</td>
+                                <td>1946-1951</td>
+                                <td>57-72</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Dwight Keith</td>
+                                <td>1943-1946</td>
+                                <td>35-21</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Roy Mundorff</td>
+                                <td>1926-1943</td>
+                                <td>173-134</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>1<br>(1938)</td>
+                            </tr>
+                            <tr>
+                                <td>Harold Hansen</td>
+                                <td>1924-1926</td>
+                                <td>10-23</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Joseph Bean</td>
+                                <td>1920-1921</td>
+                                <td>4-10</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>William Alexander</td>
+                                <td>1919-1920, 1921-1924</td>
+                                <td>36-38</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>John Heisman</td>
+                                <td>1908-1909, 1912-1914</td>
+                                <td>9-14</td>
+                                <td>0</td>
+                                <td>0-0</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button onclick="clickRight()" id="arrowScrollRight"></button>
+            </div>
+        </div>
+    </body>
+</html>
