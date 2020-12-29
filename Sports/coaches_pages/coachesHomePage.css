@@ -15,7 +15,7 @@ body {
     "a d"
     "a d";
     max-width: 80vw;
-    margin-top: 10vh;
+    padding-top: 8vh;
     max-height: 80vh;
     margin-left: 10vw;
 }
@@ -99,4 +99,41 @@ body {
     border-bottom: .5vh;
     padding: 1.25vh;
     transform: rotate(45deg);
+}
+
+#coachGrid1 {
+    display: grid;
+}
+
+#coachGrid2 {
+    display: none;
+}
+
+#coachGrid3 {
+    display: none;
+}
+
+#coachGrid4 {
+    display: none;
+}
+
+#coachGrid5 {
+    display: none;
+}
+
+#coachGrid6 {
+    display: none;
+}
+#coachGrid7 {
+    display: none;
+}
+#coachGrid8 {
+    display: none;
+}
+#coachGrid9 {
+    display: none;
+}
+
+#coachGrid10 {
+    display: none;
 }
