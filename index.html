@@ -84,8 +84,11 @@
 
     <script type="text/javascript">
       function get_right_entry(){
-        window.location.replace("mobile_pages/media.html");
-        window.location.replace("interactive_timeline/interactive_timeline.html"); 
+        if (screen.width < 700 || screen.height < 700){
+          window.location.replace("mobile_pages/ramblinreck.html");
+        } else{
+          window.location.replace("interactive_timeline/interactive_timeline.html"); 
+        }
         return false;
       }
     </script>
